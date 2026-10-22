@@ -10,7 +10,8 @@
   <body>
     <main id="top">
       <section class="intro" aria-labelledby="page-title">
-        <h1 id="page-title">Games by Michel<br />Pierce Tahya</h1>
+        <p class="role-title">Systems &amp; Gameplay Designer</p>
+        <h1 id="page-title">Games by Michel Pierce Tahya</h1>
       </section>
 
       <section class="game-list" id="games" aria-label="Games">
@@ -19,42 +20,41 @@
           <div class="game-body">
             <div class="game-meta"><span>Completed</span><time datetime="2026-10-08">Oct 8, 2026</time></div>
             <h2>Alcherogue</h2>
-            <p class="game-hook">An alchemy shop game about pouring by eye.</p>
+            <p class="game-hook">How close can you get when colour is your only measuring tool?</p>
             <p class="game-copy">
-              There are no measurements. The liquid’s colour is the instrument, and the stream
-              accelerates the longer you pour. Every sale asks the same question at a different
-              scale: take the sure thing, or reach for something better?
+              Alcherogue is an alchemy shop game about pouring by eye. Hold too long and the stream
+              runs away from you. Stop too early and the potion may only be good enough. There are
+              no numbers to trust—only the colour in the bottle and your own judgement.
             </p>
             <p class="design-focus">Game design · Tactile systems · Economy · Perception · Prototyping</p>
             <details class="design-notes">
               <summary>Read the design process</summary>
               <div class="notes-content">
-                <h3>The system</h3>
+                <h3>Why remove the measuring tools?</h3>
                 <p>
-                  Recipes name ingredients but never reveal their proportions. Potion quality is
-                  graded rather than passed or failed, so near misses still sell for less. Rent is
-                  due every third day and keeps rising, while stock purchases, haggling, and
-                  auctions make each coin a decision.
+                  Recipes tell you which ingredients belong together, but never the proportions.
+                  Every potion lands somewhere on a quality ladder, so a near miss still sells—just
+                  for less. The result is not a memory test. It is a test of control and judgement.
                 </p>
                 <p>
-                  Pouring and haggling share one hold-and-release input with an accelerating cost.
-                  The same learned skill applies to both liquid and money.
-                </p>
-
-                <h3>Two designs I cut</h3>
-                <p>
-                  The first version was a quiz roguelite. After nine versions, I cut it because a
-                  question becomes spent once its answer is known; adding more questions increased
-                  content, not depth.
-                </p>
-                <p>
-                  The replacement was a deduction game with scrambled jar labels. A short Python
-                  script proved that every four-jar arrangement could be solved in exactly two
-                  pours with the same strategy. Random labels changed the instance, but not the
-                  pattern, so I cut that version too.
+                  That same risk follows you through the shop. Rent rises every third day. Stock,
+                  haggling, and auctions all ask one question: take the safe result now, or push for
+                  something better? Pouring and haggling even share the same hold-and-release input.
                 </p>
 
-                <h3>What the numbers changed</h3>
+                <h3>Why did I throw away two versions?</h3>
+                <p>
+                  The first was a quiz roguelite. After nine versions, I realised every question
+                  became useless once its answer was known. More questions meant more content, but
+                  not more depth.
+                </p>
+                <p>
+                  The second used scrambled jar labels. A short Python script proved that every
+                  four-jar arrangement could be solved in exactly two pours with one fixed strategy.
+                  The labels changed, but the thinking did not. So I cut that version too.
+                </p>
+
+                <h3>What did testing reveal?</h3>
                 <ul>
                   <li>Economy simulations exposed free stock, predictable shortages, and rent that arrived too late.</li>
                   <li>Precision varied by 3.1× between recipes, while visible hue feedback varied by 4.8×.</li>
@@ -62,13 +62,12 @@
                   <li>A browser prototype made accelerating flow feel clearly better than constant flow.</li>
                 </ul>
 
-                <h3>Design method</h3>
+                <h3>How did I find the final direction?</h3>
                 <p>
-                  I combined playable prototypes, small verification scripts, perceptual testing,
-                  MDA, game-feel analysis, and comparison with Potion Craft, Potionomics,
-                  Recettear, Strange Horticulture, and Moonlighter. The final direction puts the
-                  difficulty in the player’s hands—the gap I found in the genre, and also its main
-                  risk for players who come to shop games to relax.
+                  I used playable prototypes, verification scripts, perceptual testing, MDA,
+                  game-feel analysis, and genre comparison. Most alchemy shop games make crafting
+                  tactile but forgiving. Alcherogue puts the challenge directly in the player’s
+                  hands. That is its identity—and its biggest design risk.
                 </p>
               </div>
             </details>
@@ -86,11 +85,11 @@
           <div class="game-body">
             <div class="game-meta"><span>Completed</span><time datetime="2026-09-30">Sep 30, 2026</time></div>
             <h2>(Not) Very Disco</h2>
-            <p class="game-hook">Friends want a high five. Pickpockets want your stuff.</p>
+            <p class="game-hook">Can you read the crowd before the beat gets ahead of you?</p>
             <p class="game-copy">
-              Wait for each dancer to reveal themselves, then choose: friend, tap left;
-              pickpocket, tap right. Faster crowds and shrinking reaction windows turn two inputs
-              into a tense score chase.
+              The dance floor is packed. Friends want a high five; pickpockets want your stuff.
+              Wait for each person to reveal themselves, then choose: friend, tap left;
+              pickpocket, tap right. Two inputs are enough—until the crowd speeds up.
             </p>
             <p class="design-focus">Game design · Two-input interaction · Feedback · Accessibility</p>
             <p class="project-note">
@@ -99,14 +98,16 @@
             <details class="design-notes">
               <summary>Read the design notes</summary>
               <div class="notes-content">
+                <h3>How does a two-button game stay tense?</h3>
                 <p>
-                  “Compact” shaped both the controls and the setting: one-touch play inside a
-                  crowded dance floor. Tapping too early, too late, or choosing the wrong person
-                  costs a life; correct reads build combo and score.
+                  “Compact” shaped both the controls and the setting: one-touch play on a crowded
+                  dance floor. A correct read builds combo and score. Acting too early, too late,
+                  or choosing the wrong person costs a life.
                 </p>
                 <p>
-                  Visual, audio, and haptic feedback distinguish the two actions. Reduce Motion,
-                  separate BGM and SFX controls, and haptic settings keep that feedback adjustable.
+                  The challenge grows through faster arrivals and smaller reaction windows, not
+                  extra buttons. Visual, audio, and haptic feedback keep every result readable,
+                  while Reduce Motion and separate feedback settings keep it adjustable.
                 </p>
               </div>
             </details>
@@ -126,20 +127,21 @@
           <div class="game-body">
             <div class="game-meta"><span>Completed</span><time datetime="2026-08-27">Aug 27, 2026</time></div>
             <h2>The Chronicles of Gilbert</h2>
-            <p class="game-hook">Deckbuilding strategy, played at action-game speed.</p>
+            <p class="game-hook">What if every card had to be played while you were still moving?</p>
             <p class="game-copy">
-              Explore dungeons, dodge-roll through danger, and use cards as real-time skills.
-              Deckbuilding decisions meet movement, positioning, and split-second execution.
+              Build a deck, enter the dungeon, then survive it in real time. Cards become combat
+              skills, but a strong hand means nothing if you mistime the dodge or lose your position.
             </p>
             <p class="design-focus">Game design · Combat systems · Deckbuilding · Encounter design</p>
             <p class="project-note">Built with Godot 4.</p>
             <details class="design-notes">
               <summary>Read the design notes</summary>
               <div class="notes-content">
+                <h3>Where does the strategy happen?</h3>
                 <p>
-                  The central design challenge was joining two different rhythms: deliberate deck
-                  construction and immediate action combat. Basic movement and dodge-rolling keep
-                  the player active, while the deck defines the skills available in each encounter.
+                  The design joins two rhythms: careful deck construction and immediate action.
+                  Your deck decides which tools you bring. Movement, positioning, and dodge-rolling
+                  decide whether you can use them. Strategy happens both before and during combat.
                 </p>
               </div>
             </details>
@@ -155,23 +157,25 @@
           <div class="game-body">
             <div class="game-meta"><span>Completed</span><time datetime="2026-07-12">Jul 12, 2026</time></div>
             <h2>Fish Together</h2>
-            <p class="game-hook">Your phone is the fishing rod.</p>
+            <p class="game-hook">What if your phone actually felt like the fishing rod?</p>
             <p class="game-copy">
-              Cast with real motion, feel bites through haptics, and race friends as every catch
-              makes the next one rarer, riskier, and more rewarding.
+              Cast with real motion. Feel the bite through haptics. Then race your friends to build
+              the strongest run before the Pond closes. Every catch makes the next choice rarer,
+              riskier, and more rewarding.
             </p>
             <p class="design-focus">Game design · Core loop · Motion controls · Haptics · Multiplayer</p>
             <details class="design-notes">
               <summary>Read the design notes</summary>
               <div class="notes-content">
+                <h3>What changes in every Pond?</h3>
                 <p>
-                  Each Pond is a temporary shared match lasting no more than 20 minutes. Players
-                  fish side by side, compete on a live leaderboard, and level up through catches.
-                  Each level offers temporary buffs that can compound into a powerful build.
+                  A Pond is a shared match lasting no more than 20 minutes. Players fish side by
+                  side, chase a live leaderboard, and level up through catches. Every level offers
+                  temporary buffs that can combine into a powerful build.
                 </p>
                 <p>
-                  Every Pond resets everyone to zero. That roguelite structure keeps sessions fair
-                  and makes the choices inside the current run matter. The loop is simple:
+                  When the Pond ends, every build disappears. The reset keeps the next match fair
+                  and makes each decision inside the current run matter. The loop is simple:
                   <strong>cast → catch → level up → compound → repeat.</strong>
                 </p>
               </div>
@@ -188,10 +192,11 @@
           <div class="game-body">
             <div class="game-meta"><span>Completed</span><time datetime="2026-07-04">Jul 4, 2026</time></div>
             <h2>HellMinistrative</h2>
-            <p class="game-hook">Hell has paperwork. You have a keyboard and no time.</p>
+            <p class="game-hook">How fast can you type when every document is about to expire?</p>
             <p class="game-copy">
-              Type the Devil’s requests while deciding which document will expire next. Timing,
-              accuracy, and prioritization all feed the same pressure system.
+              Hell has paperwork, and the Devil wants it done now. Type each request accurately
+              while deciding which document will disappear next. Speed helps—but choosing the
+              wrong task first can still ruin the level.
             </p>
             <p class="design-focus">Game design · Typing feel · Pressure systems · Priority management</p>
             <p class="project-note">
@@ -200,14 +205,15 @@
             <details class="design-notes">
               <summary>Read the design notes</summary>
               <div class="notes-content">
+                <h3>Where does the pressure come from?</h3>
                 <ul>
                   <li><strong>Overheat:</strong> time and typing accuracy determine whether the level is won or lost.</li>
                   <li><strong>CAPTCHA:</strong> an urgent event that raises heat 1.5× faster until solved.</li>
                   <li><strong>Document priority:</strong> every request carries its own weight and disappears if ignored for too long.</li>
                 </ul>
                 <p>
-                  Together, these systems make typing only half the challenge. The player must read
-                  the queue, choose what matters now, and stay accurate while the cost of delay rises.
+                  Typing is only half the challenge. The player must read the queue, decide what
+                  matters now, and stay accurate while every delay becomes more expensive.
                 </p>
               </div>
             </details>
@@ -229,20 +235,22 @@
               <time datetime="2026-05-25">May 25, 2026</time>
             </div>
             <h2>Nimbus Harvest</h2>
-            <p class="game-hook">A cozy farming game powered by the weather outside your window.</p>
+            <p class="game-hook">What if today’s real weather decided what grew in your farm?</p>
             <p class="game-copy">
-              Your local forecast becomes the farm’s weather. Plant under real sunshine, let a
-              real storm water the fields, and grow crops around the conditions they love.
+              Nimbus Harvest turns your local forecast into a cozy farming system. Plant under
+              real sunshine, let a real storm water the fields, and choose crops around the weather
+              happening outside your window.
             </p>
             <p class="design-focus">Game design · System design · Live weather · Cozy progression</p>
             <p class="project-note">App Store release · One post-launch patch · Available in the EU</p>
             <details class="design-notes">
               <summary>Read the design notes</summary>
               <div class="notes-content">
+                <h3>Why make real weather part of the game?</h3>
                 <p>
-                  Sun, clouds, rain, snow, wind, and heat are not decoration: they directly affect
-                  crop growth. Each crop prefers different weather, turning a familiar forecast
-                  into a planning system and connecting play to the world outside the screen.
+                  Sun, clouds, rain, snow, wind, and heat directly affect crop growth. Each crop
+                  prefers different conditions, so the forecast becomes a planning tool rather
+                  than decoration. The goal was to make checking the real sky feel like part of play.
                 </p>
               </div>
             </details>
