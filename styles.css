@@ -41,7 +41,13 @@ footer {
 }
 
 .intro {
-  padding-block: clamp(72px, 12vw, 150px);
+  display: flex;
+  min-height: min(62vh, 620px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: clamp(64px, 10vw, 112px);
+  text-align: center;
 }
 
 .game-meta,
@@ -53,13 +59,23 @@ footer {
 }
 
 h1 {
-  max-width: 980px;
+  max-width: 760px;
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(4rem, 11vw, 9rem);
+  font-size: clamp(2.75rem, 7vw, 5.8rem);
   font-weight: 400;
-  letter-spacing: -0.065em;
-  line-height: 0.84;
+  letter-spacing: -0.055em;
+  line-height: 0.94;
+}
+
+.role-title {
+  margin: 0 0 18px;
+  color: var(--accent);
+  font-family: "Courier New", Courier, monospace;
+  font-size: clamp(0.74rem, 1.5vw, 0.88rem);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .game-list {
@@ -180,6 +196,58 @@ h1 {
   color: var(--ink) !important;
 }
 
+.design-notes {
+  max-width: 620px;
+  margin-top: 22px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.design-notes summary {
+  padding-block: 13px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.design-notes summary:hover,
+.design-notes summary:focus-visible {
+  color: var(--accent);
+}
+
+.notes-content {
+  padding: 4px 0 20px;
+}
+
+.notes-content h3 {
+  margin: 22px 0 6px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.notes-content h3:first-child {
+  margin-top: 4px;
+}
+
+.notes-content p + p {
+  margin-top: 12px;
+}
+
+.notes-content ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.notes-content li + li {
+  margin-top: 7px;
+}
+
 .store-link {
   display: inline-block;
   padding: 10px 13px;
@@ -267,6 +335,10 @@ footer p {
 
   .game-media {
     margin-top: 12px;
+  }
+
+  .intro {
+    min-height: 52vh;
   }
 
   footer {
