@@ -281,6 +281,62 @@ h1 {
   opacity: 0.72;
 }
 
+.practice {
+  padding: 24px 0 96px;
+}
+
+.practice-header {
+  max-width: 760px;
+  padding-bottom: 48px;
+}
+
+.section-kicker,
+.practice-number {
+  margin: 0;
+  color: var(--accent);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.practice-header h2 {
+  margin: 10px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.8rem, 7vw, 5.6rem);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 0.95;
+}
+
+.practice-entry {
+  display: grid;
+  grid-template-columns: minmax(48px, 0.35fr) minmax(0, 2.05fr) minmax(280px, 0.9fr);
+  gap: 24px;
+  padding-block: 30px;
+  border-top: 1px solid var(--line);
+}
+
+.practice-entry:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.practice-entry h3 {
+  margin: 0 0 8px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.practice-entry p:last-child {
+  max-width: 650px;
+  margin: 0;
+  color: var(--muted);
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -318,6 +374,10 @@ footer p {
 
   .game-media {
     grid-column: 2;
+  }
+
+  .practice-entry {
+    grid-template-columns: 34px 1fr;
   }
 }
 

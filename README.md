@@ -20,3 +20,11 @@ Open `http://localhost:4173`.
 ## Customize
 
 Replace placeholder game titles, descriptions, and `#` links in `index.html`.
+
+## Career content
+
+- [`content/CAREER_PROFILE.md`](content/CAREER_PROFILE.md) is the canonical factual record.
+- [`content/RESUME.md`](content/RESUME.md) contains the application-ready resume copy.
+- [`content/COVER_LETTER.md`](content/COVER_LETTER.md) contains the tailored cover letter.
+
+Update the career profile first when new projects, tools, roles, or experience are confirmed.
