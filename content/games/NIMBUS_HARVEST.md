@@ -6,6 +6,7 @@
 - **Status:** Released on the App Store; one post-launch patch; available in the European Union
 - **App Store:** https://apps.apple.com/id/app/nimbus-harvest/id6770053044
 - **Roles:** Game designer, UI designer and implementer, gameplay polish
+- **Technology:** SwiftUI, SwiftData, WeatherKit, WidgetKit
 
 ## Design
 

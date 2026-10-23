@@ -23,7 +23,7 @@ Technical game designer who turns design questions into playable tests, observes
 
 ## Selected Game-Development Experience
 
-### Alcherogue — Solo Game Designer & Developer | October 2026
+### Alcherogue — Solo Game Designer & Developer | Unity 6, C# | October 2026
 
 - Owned the project end to end: game design, programming, illustration, and 2.5D technical art.
 - Designed pouring, potion quality, stock, haggling, auctions, and rent around one repeated risk decision.
@@ -35,6 +35,7 @@ Technical game designer who turns design questions into playable tests, observes
 ### Fih Together — Game Designer, 3D Artist & Technical Artist | Unity 6, C# | July 2026
 
 - Designed motion-based casting, haptic bite feedback, temporary progression, and multiplayer Pond sessions.
+- Worked in a five-person team to build and test the concept.
 - Created the 3D environment, pixelated shaders, and dynamic pixelated water animation.
 - Ran a three-person playtest that questioned the multiplayer Pond’s purpose; strengthened fellowship by letting players create and join shared sessions where larger groups improve the chance of better fish.
 
@@ -48,6 +49,7 @@ Technical game designer who turns design questions into playable tests, observes
 ### Nimbus Harvest — Game Design, UI & Gameplay Polish | May 2026
 
 - Designed a farming system driven by real local weather and designed and implemented the UI.
+- Worked with SwiftUI, SwiftData, WeatherKit, and WidgetKit to connect the game to local forecasts and native iOS features.
 - Replaced automatic harvesting with direct player interaction and added animation, SFX, and coin feedback to improve clarity and satisfaction.
 - Released on the App Store, delivered one post-launch patch, and made the game available in the EU.
 

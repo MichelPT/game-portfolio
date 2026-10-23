@@ -5,6 +5,7 @@ The spelling **Fih Together** is intentional and must not be corrected to “Fis
 ## Project facts
 
 - **Date:** July 12, 2026
+- **Team:** Five people
 - **Engine:** Unity 6
 - **Primary language for Unity work:** C#
 - **Roles:** Game designer, 3D artist, technical artist

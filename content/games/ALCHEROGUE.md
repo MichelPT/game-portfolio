@@ -4,6 +4,8 @@
 
 - **Date:** October 8, 2026
 - **Type:** Solo project
+- **Engine:** Unity 6
+- **Language:** C#
 - **Roles:** Game designer, programmer, illustrator, technical artist
 - **Technical work:** Implemented the game, its illustrations, and a 2.5D visual approach
 - **Methods:** Paper prototyping, playable browser prototyping, Python verification scripts, economy simulation, perceptual testing, MDA, game-feel analysis, comparative analysis
@@ -31,6 +33,12 @@ Rent, stock, haggling, and auctions repeat the same decision at different scales
 - **Main questions:** Whether selling currency felt important, how different customer-container shapes changed difficulty and fairness, what assistance players needed, and what motivated them to continue.
 - **Distinctive finding:** Container geometry was not cosmetic. Different shapes changed how difficult the same pouring task felt, creating a unique but important fairness problem.
 - **Design response:** Add a shop where players can refill supplies or buy measuring aids; limit the range of customer-container shapes; add a stronger narrative that gives players a reason to continue through the progression.
+
+## Process evidence
+
+- `assets/alcherogue/process/paper-playtest.jpg`: observing a player complete the paper version of the core loop.
+- `assets/alcherogue/process/prototype-materials.jpg`: handmade potion, recipe, container, day, and currency materials.
+- `assets/alcherogue/process/design-process.jpg`: the paper interface beside a digital narrative flow during design work.
 
 ## Public positioning
 

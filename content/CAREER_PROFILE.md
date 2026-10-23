@@ -27,7 +27,10 @@ Michel designs interconnected mechanics around clear player decisions, then test
 - Uses C# for Unity development.
 - Used GDScript in Godot 4 to implement UI created for The Chronicles of Gilbert.
 - Completed Alcherogue as a solo project, owning game design, programming, illustration, and 2.5D technical art.
+- Built Alcherogue in Unity 6 with C#.
 - Conducted a 15-person paper playtest for Alcherogue and a three-person playtest for Fih Together.
+- Built Fih Together with a five-person team.
+- Worked on Nimbus Harvest using SwiftUI, SwiftData, WeatherKit, and WidgetKit.
 - Used playable-prototype feedback to polish (Not) Very Disco.
 - Used Python scripts to verify puzzle structure and simulate design assumptions for Alcherogue.
 - Shared game-design thinking through the Mechanics–Dynamics–Aesthetics framework.
@@ -102,6 +105,5 @@ Information Technology · 2021–2025 · GPA 3.85/4.00
 Do not convert these into public claims until Michel verifies them:
 
 - Exact start and end dates and client-safe company name for the completed AI evaluation contract.
-- Exact team size and ownership boundaries for collaborative games beyond the roles recorded in each game file.
+- Exact team size and ownership boundaries for collaborative games other than Fih Together, beyond the roles recorded in each game file.
 - Date, venue, and audience for the MDA sharing session.
-- The location of the previously mentioned `starter_pack` and `media` folders. They are not currently present in this repository or its known branches.
