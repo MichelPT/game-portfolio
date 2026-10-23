@@ -28,6 +28,7 @@ Open `http://localhost:4173`.
 ## Career content
 
 - [`content/CAREER_PROFILE.md`](content/CAREER_PROFILE.md) is the canonical factual record.
+- [`content/games/`](content/games/) keeps each game’s roles, methods, playtest findings, and design responses in a separate source file.
 - [`content/RESUME.md`](content/RESUME.md) contains the application-ready resume copy.
 - [`content/COVER_LETTER.md`](content/COVER_LETTER.md) contains the tailored cover letter.
 

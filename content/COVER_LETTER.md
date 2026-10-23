@@ -2,24 +2,24 @@
 
 Dear Hiring Team,
 
-I am applying for the role focused on developing game-engine assessment projects, realistic gameplay bugs, feature challenges, reference solutions, and verifiable playtesting criteria.
+I am applying for the role creating game-engine assessment projects, realistic gameplay problems, feature challenges, reference solutions, and verifiable playtesting criteria. My background sits directly between systems design, hands-on implementation, and evaluation: I build mechanics, test what players actually understand, and turn the evidence into specific revisions.
 
-During 2026, I completed six game projects across Unity 6, Godot 4, iOS, multiplayer, action combat, and game jams. My work includes Nimbus Harvest, which I released on the App Store and supported with a post-launch patch, as well as two published itch.io projects.
+In 2026, I completed six games across Unity 6, Godot 4, iOS, multiplayer, action combat, and game jams. I use C# in Unity and GDScript for UI implementation in Godot 4. My work also spans UI, animation, shaders, 3D environments, technical art, Python verification scripts, and post-launch support.
 
-My primary strengths are systems design, gameplay design, and prototype-driven evaluation. I enjoy reducing a game to its central player decision, identifying the systems that support that decision, and testing whether the implemented behaviour creates the intended experience.
+Alcherogue is my strongest example of end-to-end ownership. It is a solo project for which I handled game design, programming, illustration, and a 2.5D visual approach. I discarded two earlier concepts after testing their structure: a quiz version exhausted its content once answers were learned, while a Python script proved that every four-jar deduction arrangement could be solved in exactly two pours with one fixed strategy. Further scripts exposed economy and perceptual-balance problems that were difficult to see in the design document alone.
 
-Alcherogue is the clearest example of this process. The project began as a quiz roguelite, but I removed that direction after determining that questions became exhausted once their answers were known. I then tested a deduction-based design and wrote a Python script that proved every four-jar arrangement could be solved in exactly two pours using the same strategy. Because the instance changed but the underlying thinking did not, I removed that version as well.
+I also ran a 15-person paper playtest of Alcherogue’s core loop. Players chose potions, poured into different customer containers, and used stopwatch timing because the paper prototype had no liquid graphics. The test showed strong engagement, but it also exposed more useful questions: whether selling currency mattered, whether different container shapes created fair difficulty, what forms of assistance players needed, and what would motivate them to continue. Container geometry was especially important because it changed the difficulty of the same action. I responded by limiting container variety, designing a shop for refills and measuring tools, and strengthening the narrative progression.
 
-For the final design, I used playable prototypes, economy simulations, perceptual testing, and comparative analysis. These methods exposed excessive free stock, predictable ingredient shortages, delayed rent pressure, and large differences between mathematical recipe tolerance and visible colour feedback. I used those findings to develop the final pouring, quality, and economy systems.
+That observation-to-implementation loop also appears in my team projects. A three-person Fih Together playtest questioned why a virtual Pond needed other players, so the design developed into joinable sessions where larger groups improve the chance of catching better fish. For (Not) Very Disco, prototype feedback said impacts needed more weight and competition; I revised the character animation and added techniques such as hit stop to make actions snappier and more satisfying. In Nimbus Harvest, I removed automatic harvesting and added animation, sound, and coin feedback so planting and harvesting became direct, readable actions.
 
-My other projects include motion-controlled and haptic fishing in Unity 6, real-time card combat in Godot 4, live-weather farming, typing and priority-management systems, and a two-input arcade game with accessibility options. I have also conducted playtesting, shared game-design methods through the MDA framework, and evaluated Indonesian AI interactions involving applications, tools, and APIs.
+These projects have trained me to define a design problem, build the smallest useful test, observe verifiable states and player behaviour, and document the expected response. My completed AI-evaluation contract further strengthened my ability to follow complex technical guidelines, interpret tool and API behaviour, and write precise judgements in English. That combination matches the work of creating reproducible gameplay bugs, multifaceted feature tasks, clear briefs, reference implementations, and end-to-end acceptance criteria.
 
-This combination of game development, systems thinking, structured evaluation, and written communication is what interests me about this position. The opportunity to create realistic gameplay problems, define observable success criteria, build reference solutions, and verify each task through end-to-end testing closely matches how I approach design work.
-
-My portfolio is available at [michelpt.tech](https://michelpt.tech), with additional published work on [itch.io](https://obil.itch.io) and [GitHub](https://github.com/MichelPT).
+My portfolio is available at [michelpt.tech](https://michelpt.tech), with published work on [itch.io](https://obil.itch.io) and source work on [GitHub](https://github.com/MichelPT).
 
 Thank you for your consideration.
 
-Sincerely,  
+Sincerely,
+
 **Michel Pierce Tahya**
 
+michelpiercetahya@gmail.com · +62 851-2363-5895
