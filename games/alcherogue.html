@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Alcherogue — a systems and gameplay design case study by Michel Pierce Tahya." />
+    <title>Alcherogue — Michel Pierce Tahya</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="project-page">
+    <main class="project-main">
+      <nav class="project-nav" aria-label="Project navigation"><a class="back-link" href="../index.html#games">← All games</a></nav>
+      <header class="project-hero">
+        <p class="project-kicker">Systems design case study</p>
+        <h1>Alcherogue</h1>
+        <p class="project-lede">How close can you get when colour is your only measuring tool?</p>
+        <div class="project-meta"><span>Completed</span><time datetime="2026-10-08">Oct 8, 2026</time><span>Tactile systems · Economy · Perception</span></div>
+      </header>
+      <figure class="project-feature"><img src="../assets/alcherogue/pouring_gameplay.png" alt="Alcherogue potion pouring gameplay" /></figure>
+
+      <section class="case-study" aria-labelledby="case-study-title">
+        <p class="case-study-label" id="case-study-title">Design process</p>
+        <div class="case-sections">
+          <section class="case-section">
+            <h2>One decision, repeated at every scale</h2>
+            <p>Alcherogue is an alchemy shop game about pouring by eye. Recipes name the ingredients, but never the proportions. The liquid’s colour is the only instrument, and an accelerating stream makes every extra drop harder to control.</p>
+            <p>Potions land on a quality ladder instead of simply passing or failing. The same question then appears in pouring, pricing, stock, and auctions: take the sure result now, or reach for something better?</p>
+          </section>
+          <section class="case-section">
+            <h2>Why I cut two complete directions</h2>
+            <p>The first version was a quiz roguelite. After nine iterations, I found its structural limit: every question was spent once the answer was known. Adding more questions increased content, not depth.</p>
+            <p>The second version was a deduction game with scrambled jar labels. A short Python script proved that every four-jar arrangement could be solved in exactly two pours with one fixed strategy. The labels changed, but the thinking did not, so I cut it too.</p>
+          </section>
+          <section class="case-section">
+            <h2>What the numbers exposed</h2>
+            <ul>
+              <li>Economy simulations revealed excess free stock, predictable shortages, and rent pressure arriving too late.</li>
+              <li>Required precision varied by 3.1× between recipes, while visible hue feedback varied by 4.8×.</li>
+              <li>One recipe produced only 2.8° of visible hue change—unfair for a judgement made from memory.</li>
+              <li>A playable browser prototype made accelerating flow feel clearly stronger than constant flow.</li>
+            </ul>
+          </section>
+          <section class="case-section">
+            <h2>The final design method</h2>
+            <p>I combined playable prototypes, verification scripts, perceptual testing, MDA, game-feel analysis, and genre comparison. The result puts the challenge directly in the player’s hands while using one input language—hold and release—for both pouring and haggling.</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="project-gallery" aria-label="Alcherogue screenshots">
+        <figure><img src="../assets/alcherogue/vvip_request.png" alt="Customer requesting an exact potion blend" /></figure>
+        <figure><img src="../assets/alcherogue/sold_success.png" alt="Potion sale result and quality breakdown" /></figure>
+        <figure><img src="../assets/alcherogue/narratives.png" alt="Customer narrative introduction" /></figure>
+      </section>
+      <nav class="project-pagination" aria-label="More games"><a href="nimbus-harvest.html">← Nimbus Harvest</a><a href="not-very-disco.html">(Not) Very Disco →</a></nav>
+    </main>
+    <footer><p>© <span id="year">2026</span> Michel Pierce Tahya</p></footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

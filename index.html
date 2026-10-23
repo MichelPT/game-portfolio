@@ -15,273 +15,138 @@
       </section>
 
       <section class="game-list" id="games" aria-label="Games">
-        <article class="game featured">
+        <article class="game game-preview">
           <div class="game-number" aria-hidden="true">06</div>
           <div class="game-body">
             <div class="game-meta"><span>Completed</span><time datetime="2026-10-08">Oct 8, 2026</time></div>
-            <h2>Alcherogue</h2>
+            <h2><a href="games/alcherogue.html">Alcherogue</a></h2>
             <p class="game-hook">How close can you get when colour is your only measuring tool?</p>
-            <p class="game-copy">
-              Alcherogue is an alchemy shop game about pouring by eye. Hold too long and the stream
-              runs away from you. Stop too early and the potion may only be good enough. There are
-              no numbers to trust—only the colour in the bottle and your own judgement.
-            </p>
-            <p class="design-focus">Game design · Tactile systems · Economy · Perception · Prototyping</p>
-            <details class="design-notes">
-              <summary>Read the design process</summary>
-              <div class="notes-content">
-                <h3>Why remove the measuring tools?</h3>
-                <p>
-                  Recipes tell you which ingredients belong together, but never the proportions.
-                  Every potion lands somewhere on a quality ladder, so a near miss still sells—just
-                  for less. The result is not a memory test. It is a test of control and judgement.
-                </p>
-                <p>
-                  That same risk follows you through the shop. Rent rises every third day. Stock,
-                  haggling, and auctions all ask one question: take the safe result now, or push for
-                  something better? Pouring and haggling even share the same hold-and-release input.
-                </p>
-
-                <h3>Why did I throw away two versions?</h3>
-                <p>
-                  The first was a quiz roguelite. After nine versions, I realised every question
-                  became useless once its answer was known. More questions meant more content, but
-                  not more depth.
-                </p>
-                <p>
-                  The second used scrambled jar labels. A short Python script proved that every
-                  four-jar arrangement could be solved in exactly two pours with one fixed strategy.
-                  The labels changed, but the thinking did not. So I cut that version too.
-                </p>
-
-                <h3>What did testing reveal?</h3>
-                <ul>
-                  <li>Economy simulations exposed free stock, predictable shortages, and rent that arrived too late.</li>
-                  <li>Precision varied by 3.1× between recipes, while visible hue feedback varied by 4.8×.</li>
-                  <li>One recipe changed by only 2.8° of hue, making memory-based judgement unfair rather than difficult.</li>
-                  <li>A browser prototype made accelerating flow feel clearly better than constant flow.</li>
-                </ul>
-
-                <h3>How did I find the final direction?</h3>
-                <p>
-                  I used playable prototypes, verification scripts, perceptual testing, MDA,
-                  game-feel analysis, and genre comparison. Most alchemy shop games make crafting
-                  tactile but forgiving. Alcherogue puts the challenge directly in the player’s
-                  hands. That is its identity—and its biggest design risk.
-                </p>
-              </div>
-            </details>
+            <p class="game-copy">An alchemy shop game about pouring by eye, where every extra drop is a risk.</p>
+            <p class="design-focus">Tactile systems · Economy · Perception</p>
+            <a class="case-link" href="games/alcherogue.html">Read case study →</a>
           </div>
-          <div class="game-media gallery-grid" aria-label="Alcherogue screenshots">
-            <img src="assets/alcherogue/pouring_gameplay.png" alt="Alcherogue accelerating potion pour judged by colour" />
-            <img src="assets/alcherogue/vvip_request.png" alt="Alcherogue customer requesting an exact potion blend" />
-            <img src="assets/alcherogue/sold_success.png" alt="Alcherogue potion sale result and quality breakdown" />
-            <img src="assets/alcherogue/narratives.png" alt="Alcherogue customer narrative introduction" />
-          </div>
+          <a class="preview-image" href="games/alcherogue.html" aria-label="Read the Alcherogue case study">
+            <img src="assets/alcherogue/pouring_gameplay.png" alt="Alcherogue potion pouring gameplay" />
+          </a>
         </article>
 
-        <article class="game featured">
+        <article class="game game-preview">
           <div class="game-number" aria-hidden="true">05</div>
           <div class="game-body">
             <div class="game-meta"><span>Completed</span><time datetime="2026-09-30">Sep 30, 2026</time></div>
-            <h2>(Not) Very Disco</h2>
+            <h2><a href="games/not-very-disco.html">(Not) Very Disco</a></h2>
             <p class="game-hook">Can you read the crowd before the beat gets ahead of you?</p>
-            <p class="game-copy">
-              The dance floor is packed. Friends want a high five; pickpockets want your stuff.
-              Wait for each person to reveal themselves, then choose: friend, tap left;
-              pickpocket, tap right. Two inputs are enough—until the crowd speeds up.
-            </p>
-            <p class="design-focus">Game design · Two-input interaction · Feedback · Accessibility</p>
-            <p class="project-note">
-              Very Disco Game Jam 2026 — <strong>theme: “Compact.”</strong>
-            </p>
-            <details class="design-notes">
-              <summary>Read the design notes</summary>
-              <div class="notes-content">
-                <h3>How does a two-button game stay tense?</h3>
-                <p>
-                  “Compact” shaped both the controls and the setting: one-touch play on a crowded
-                  dance floor. A correct read builds combo and score. Acting too early, too late,
-                  or choosing the wrong person costs a life.
-                </p>
-                <p>
-                  The challenge grows through faster arrivals and smaller reaction windows, not
-                  extra buttons. Visual, audio, and haptic feedback keep every result readable,
-                  while Reduce Motion and separate feedback settings keep it adjustable.
-                </p>
-              </div>
-            </details>
+            <p class="game-copy">A two-input reaction game about high-fiving friends and stopping pickpockets.</p>
+            <p class="design-focus">Reaction design · Feedback · Accessibility</p>
             <div class="game-links">
-              <a class="store-link" href="https://obil.itch.io/not-very-disco" target="_blank" rel="noreferrer">Play on itch.io ↗</a>
-              <a href="https://itch.io/jam/very-disco-game-jam-2026-3" target="_blank" rel="noreferrer">View the jam ↗</a>
+              <a class="case-link" href="games/not-very-disco.html">Read case study →</a>
+              <a href="https://obil.itch.io/not-very-disco" target="_blank" rel="noreferrer">Play ↗</a>
             </div>
           </div>
-          <div class="game-media wide-media" aria-label="(Not) Very Disco screenshots">
-            <img src="assets/not-very-disco/gameplay-1.png" alt="(Not) Very Disco successful high five and combo" />
-            <img src="assets/not-very-disco/gameplay-2.png" alt="(Not) Very Disco pickpocket approaching on the dance floor" />
-          </div>
+          <a class="preview-image" href="games/not-very-disco.html" aria-label="Read the (Not) Very Disco case study">
+            <img src="assets/not-very-disco/gameplay-1.png" alt="(Not) Very Disco high-five gameplay" />
+          </a>
         </article>
 
-        <article class="game featured">
+        <article class="game game-preview">
           <div class="game-number" aria-hidden="true">04</div>
           <div class="game-body">
             <div class="game-meta"><span>Completed</span><time datetime="2026-08-27">Aug 27, 2026</time></div>
-            <h2>The Chronicles of Gilbert</h2>
+            <h2><a href="games/the-chronicles-of-gilbert.html">The Chronicles of Gilbert</a></h2>
             <p class="game-hook">What if every card had to be played while you were still moving?</p>
-            <p class="game-copy">
-              Build a deck, enter the dungeon, then survive it in real time. Cards become combat
-              skills, but a strong hand means nothing if you mistime the dodge or lose your position.
-            </p>
-            <p class="design-focus">Game design · Combat systems · Deckbuilding · Encounter design</p>
-            <p class="project-note">Built with Godot 4.</p>
-            <details class="design-notes">
-              <summary>Read the design notes</summary>
-              <div class="notes-content">
-                <h3>Where does the strategy happen?</h3>
-                <p>
-                  The design joins two rhythms: careful deck construction and immediate action.
-                  Your deck decides which tools you bring. Movement, positioning, and dodge-rolling
-                  decide whether you can use them. Strategy happens both before and during combat.
-                </p>
-              </div>
-            </details>
+            <p class="game-copy">A Godot 4 action card battler where deckbuilding meets real-time dungeon combat.</p>
+            <p class="design-focus">Combat systems · Deckbuilding · Encounters</p>
+            <a class="case-link" href="games/the-chronicles-of-gilbert.html">Read case study →</a>
           </div>
-          <div class="game-media wide-media" aria-label="The Chronicles of Gilbert screenshots">
-            <img src="assets/the-chronicles-of-gilbert/gameplay.png" alt="The Chronicles of Gilbert real-time dungeon combat and card hand" />
-            <img src="assets/the-chronicles-of-gilbert/gameover-state.png" alt="The Chronicles of Gilbert game-over screen" />
-          </div>
+          <a class="preview-image" href="games/the-chronicles-of-gilbert.html" aria-label="Read The Chronicles of Gilbert case study">
+            <img src="assets/the-chronicles-of-gilbert/gameplay.png" alt="The Chronicles of Gilbert dungeon combat" />
+          </a>
         </article>
 
-        <article class="game featured">
+        <article class="game game-preview">
           <div class="game-number" aria-hidden="true">03</div>
           <div class="game-body">
             <div class="game-meta"><span>Completed</span><time datetime="2026-07-12">Jul 12, 2026</time></div>
-            <h2>Fish Together</h2>
+            <h2><a href="games/fish-together.html">Fish Together</a></h2>
             <p class="game-hook">What if your phone actually felt like the fishing rod?</p>
-            <p class="game-copy">
-              Cast with real motion. Feel the bite through haptics. Then race your friends to build
-              the strongest run before the Pond closes. Every catch makes the next choice rarer,
-              riskier, and more rewarding.
-            </p>
-            <p class="design-focus">Game design · Core loop · Motion controls · Haptics · Multiplayer</p>
-            <details class="design-notes">
-              <summary>Read the design notes</summary>
-              <div class="notes-content">
-                <h3>What changes in every Pond?</h3>
-                <p>
-                  A Pond is a shared match lasting no more than 20 minutes. Players fish side by
-                  side, chase a live leaderboard, and level up through catches. Every level offers
-                  temporary buffs that can combine into a powerful build.
-                </p>
-                <p>
-                  When the Pond ends, every build disappears. The reset keeps the next match fair
-                  and makes each decision inside the current run matter. The loop is simple:
-                  <strong>cast → catch → level up → compound → repeat.</strong>
-                </p>
-              </div>
-            </details>
+            <p class="game-copy">A Unity 6 multiplayer fishing game built around motion, haptics, and short roguelite runs.</p>
+            <p class="design-focus">Core loop · Motion controls · Multiplayer</p>
+            <a class="case-link" href="games/fish-together.html">Read case study →</a>
           </div>
-          <div class="game-media development-media" aria-label="Fish Together screenshots">
+          <a class="preview-image portrait-preview" href="games/fish-together.html" aria-label="Read the Fish Together case study">
             <img src="assets/fih-together/mobile_gameplay.png" alt="Fish Together mobile fishing gameplay" />
-            <img src="assets/fih-together/unity_environment.png" alt="Fish Together pond environment during development" />
-          </div>
+          </a>
         </article>
 
-        <article class="game featured">
+        <article class="game game-preview">
           <div class="game-number" aria-hidden="true">02</div>
           <div class="game-body">
             <div class="game-meta"><span>Completed</span><time datetime="2026-07-04">Jul 4, 2026</time></div>
-            <h2>HellMinistrative</h2>
+            <h2><a href="games/hellministrative.html">HellMinistrative</a></h2>
             <p class="game-hook">How fast can you type when every document is about to expire?</p>
-            <p class="game-copy">
-              Hell has paperwork, and the Devil wants it done now. Type each request accurately
-              while deciding which document will disappear next. Speed helps—but choosing the
-              wrong task first can still ruin the level.
-            </p>
-            <p class="design-focus">Game design · Typing feel · Pressure systems · Priority management</p>
-            <p class="project-note">
-              Game Seed 2026 — <strong>theme: “So Absurd, It’s Cool.”</strong>
-            </p>
-            <details class="design-notes">
-              <summary>Read the design notes</summary>
-              <div class="notes-content">
-                <h3>Where does the pressure come from?</h3>
-                <ul>
-                  <li><strong>Overheat:</strong> time and typing accuracy determine whether the level is won or lost.</li>
-                  <li><strong>CAPTCHA:</strong> an urgent event that raises heat 1.5× faster until solved.</li>
-                  <li><strong>Document priority:</strong> every request carries its own weight and disappears if ignored for too long.</li>
-                </ul>
-                <p>
-                  Typing is only half the challenge. The player must read the queue, decide what
-                  matters now, and stay accurate while every delay becomes more expensive.
-                </p>
-              </div>
-            </details>
+            <p class="game-copy">A typing game that turns the Devil’s paperwork into a test of accuracy and priority.</p>
+            <p class="design-focus">Typing feel · Pressure · Priority management</p>
             <div class="game-links">
-              <a class="store-link" href="https://obil.itch.io/hellministrative" target="_blank" rel="noreferrer">Play on itch.io ↗</a>
+              <a class="case-link" href="games/hellministrative.html">Read case study →</a>
+              <a href="https://obil.itch.io/hellministrative" target="_blank" rel="noreferrer">Play ↗</a>
             </div>
           </div>
-          <div class="game-media wide-media" aria-label="HellMinistrative screenshots">
+          <a class="preview-image" href="games/hellministrative.html" aria-label="Read the HellMinistrative case study">
             <img src="assets/hellministrative/gameplay-1.png" alt="HellMinistrative document queue and overheat bar" />
-            <img src="assets/hellministrative/gameplay-2.png" alt="HellMinistrative typing task in progress" />
-          </div>
+          </a>
         </article>
 
-        <article class="game featured">
+        <article class="game game-preview">
           <div class="game-number" aria-hidden="true">01</div>
           <div class="game-body">
-            <div class="game-meta">
-              <span class="status released">Released</span>
-              <time datetime="2026-05-25">May 25, 2026</time>
-            </div>
-            <h2>Nimbus Harvest</h2>
+            <div class="game-meta"><span class="status released">Released</span><time datetime="2026-05-25">May 25, 2026</time></div>
+            <h2><a href="games/nimbus-harvest.html">Nimbus Harvest</a></h2>
             <p class="game-hook">What if today’s real weather decided what grew in your farm?</p>
-            <p class="game-copy">
-              Nimbus Harvest turns your local forecast into a cozy farming system. Plant under
-              real sunshine, let a real storm water the fields, and choose crops around the weather
-              happening outside your window.
-            </p>
-            <p class="design-focus">Game design · System design · Live weather · Cozy progression</p>
-            <p class="project-note">App Store release · One post-launch patch · Available in the EU</p>
-            <details class="design-notes">
-              <summary>Read the design notes</summary>
-              <div class="notes-content">
-                <h3>Why make real weather part of the game?</h3>
-                <p>
-                  Sun, clouds, rain, snow, wind, and heat directly affect crop growth. Each crop
-                  prefers different conditions, so the forecast becomes a planning tool rather
-                  than decoration. The goal was to make checking the real sky feel like part of play.
-                </p>
-              </div>
-            </details>
+            <p class="game-copy">A cozy farming game where the player’s local forecast changes the farm.</p>
+            <p class="design-focus">System design · Live weather · Cozy progression</p>
             <div class="game-links">
-              <a class="store-link" href="https://apps.apple.com/id/app/nimbus-harvest/id6770053044" target="_blank" rel="noreferrer">View on the App Store ↗</a>
+              <a class="case-link" href="games/nimbus-harvest.html">Read case study →</a>
+              <a href="https://apps.apple.com/id/app/nimbus-harvest/id6770053044" target="_blank" rel="noreferrer">App Store ↗</a>
             </div>
           </div>
-          <div class="game-media" aria-label="Nimbus Harvest screenshots">
-            <img src="assets/nimbus-harvest/farm_page.png" alt="Nimbus Harvest farm reacting to sunny weather" />
-            <img src="assets/nimbus-harvest/details_page.png" alt="Nimbus Harvest local hourly weather forecast" />
-          </div>
+          <a class="preview-image" href="games/nimbus-harvest.html" aria-label="Read the Nimbus Harvest case study">
+            <img src="assets/nimbus-harvest/farm_page.png" alt="Nimbus Harvest farm reacting to real weather" />
+          </a>
         </article>
 
         <article class="game in-progress">
           <div class="game-number" aria-hidden="true">07</div>
           <div class="game-body">
-            <div class="game-meta">
-              <span class="status building">In progress</span>
-              <time datetime="2026">2026</time>
-            </div>
+            <div class="game-meta"><span class="status building">In progress</span><time datetime="2026">2026</time></div>
             <h2>Current Project</h2>
             <p class="game-copy">More details when it is ready to show.</p>
           </div>
         </article>
       </section>
+
+      <section class="practice" aria-labelledby="practice-title">
+        <header class="practice-header">
+          <p class="section-kicker">Design practice</p>
+          <h2 id="practice-title">How I work</h2>
+        </header>
+        <div class="practice-list">
+          <article class="practice-entry">
+            <p class="practice-number" aria-hidden="true">01</p>
+            <div><h3>Prototype the question</h3><p>I build the smallest useful test, then use play and data to decide what survives.</p></div>
+          </article>
+          <article class="practice-entry">
+            <p class="practice-number" aria-hidden="true">02</p>
+            <div><h3>Watch what players do</h3><p>Hesitation, missed feedback, and ignored choices tell me what the next version needs.</p></div>
+          </article>
+          <article class="practice-entry">
+            <p class="practice-number" aria-hidden="true">03</p>
+            <div><h3>Explain the system</h3><p>I connect mechanics, player behaviour, and intended experience so decisions can be evaluated.</p></div>
+          </article>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <p>© <span id="year">2026</span> Michel Pierce Tahya</p>
-    </footer>
-
+    <footer><p>© <span id="year">2026</span> Michel Pierce Tahya</p></footer>
     <script src="script.js"></script>
   </body>
 </html>
