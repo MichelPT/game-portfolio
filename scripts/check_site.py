@@ -1,11 +1,13 @@
 """Validate required portfolio files and local HTML references."""
 
 from html.parser import HTMLParser
+import os
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 
-ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+ROOT = (PROJECT_ROOT / os.environ.get("SITE_ROOT", ".")).resolve()
 REQUIRED_FILES = ("index.html", "styles.css", "script.js")
 
 
