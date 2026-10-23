@@ -17,9 +17,13 @@ Open `http://localhost:4173`.
 - Pushes and merges to `main` validate and deploy to GitHub Pages.
 - The custom domain will be configured separately.
 
-## Customize
+## Site structure
 
-Replace placeholder game titles, descriptions, and `#` links in `index.html`.
+- `index.html` is the concise chronological game index.
+- `games/*.html` contains the full case study for each finished game.
+- `assets/` contains project media; images are displayed without cropping.
+- `styles.css` contains the shared visual system for the index and case studies.
+- `scripts/check_site.py` validates every HTML page and its local references.
 
 ## Career content
 

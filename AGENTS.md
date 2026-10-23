@@ -28,7 +28,9 @@ Minimal static portfolio for Michel Pierce Tahya's games. Visual direction: edit
 
 ## Editing
 
-- Game entries live directly in `index.html`.
+- Concise game previews live directly in `index.html`.
+- Full game case studies live in `games/*.html` and must link back to the chronological index.
+- Keep detailed process writing and complete galleries on case-study pages, not the homepage.
 - Global visual tokens live at top of `styles.css`.
 - Verified career facts live in `content/CAREER_PROFILE.md`; treat it as the canonical source for resume, cover-letter, and portfolio claims.
 - Keep `content/RESUME.md` and `content/COVER_LETTER.md` consistent with the career profile.
