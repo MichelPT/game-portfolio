@@ -28,6 +28,9 @@ Michel designs interconnected mechanics around clear player decisions, then test
 - Used GDScript in Godot 4 to implement UI created for The Chronicles of Gilbert.
 - Completed Alcherogue as a solo project, owning game design, programming, illustration, and 2.5D technical art.
 - Built Alcherogue in Unity 6 with C#.
+- Routed Alcherogue run randomness through a seed so the same seed and player actions reproduce the same run.
+- Built Alcherogue developer tools for state jumps, screenshots, playtest logs, and iOS build tracking.
+- Checked Alcherogue layouts at iPhone, iPhone SE, and iPad aspect ratios.
 - Conducted a 15-person paper playtest for Alcherogue and a three-person playtest for Fih Together.
 - Built Fih Together with a five-person team.
 - Worked on Nimbus Harvest using SwiftUI, SwiftData, WeatherKit, and WidgetKit.
@@ -40,10 +43,10 @@ Michel designs interconnected mechanics around clear player decisions, then test
 
 **Game design:** systems design, gameplay design, core loops, progression, economy balancing, risk and reward, game feel, multiplayer motivation, combat and deckbuilding analysis, accessibility, MDA
 
-**Development:** Unity 6, C#, Godot 4, GDScript UI implementation, Python verification scripts, browser prototyping, Git, GitHub
+**Development:** Unity 6, C#, URP, Input System, uGUI, ScriptableObjects, custom editor tools, Godot 4, GDScript UI implementation, Python verification scripts, browser prototyping, Git, GitHub
 
 **Art and UI:** UI design and implementation, 2D illustration, sprite animation, visual effects, 3D environments, shaders, 2.5D presentation, Aseprite, Figma
-**Evaluation:** paper and playable prototyping, playtest planning and synthesis, state-space analysis, economy simulation, perceptual testing, comparative analysis
+**Evaluation:** seeded reproduction, debug-state tools, device-layout checks, paper and playable prototyping, playtest planning and synthesis, state-space analysis, economy simulation, perceptual testing, comparative analysis
 
 ## Game-project sources
 
