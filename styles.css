@@ -18,10 +18,16 @@ main, footer { width: min(var(--content), calc(100% - 48px)); margin-inline: aut
 .intro { display: flex; min-height: min(56vh, 540px); flex-direction: column; align-items: center; justify-content: center; padding-block: clamp(64px, 9vw, 104px); text-align: center; }
 h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
 h1 { max-width: 720px; margin: 0; font-size: clamp(2.45rem, 6vw, 5rem); letter-spacing: -0.055em; line-height: 0.96; }
-.role-title, .game-meta, .game-number, .tag-list, .case-link, .section-kicker, .process-number, .project-kicker, .back-link, .project-links, .project-pagination, .portfolio-switch { font-family: "Courier New", Courier, monospace; text-transform: uppercase; }
+.role-title, .game-meta, .game-number, .tag-list, .case-link, .project-kicker, .back-link, .project-links, .project-pagination, .portfolio-switch { font-family: "Courier New", Courier, monospace; text-transform: uppercase; }
 .role-title { margin: 0 0 18px; color: var(--accent); font-size: clamp(0.74rem, 1.5vw, 0.88rem); font-weight: 700; letter-spacing: 0.12em; }
-.portfolio-switch { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 20px; margin-top: 30px; font-size: 0.76rem; font-weight: 700; letter-spacing: 0.04em; }
-.portfolio-switch span { color: var(--accent); }
+.portfolio-switch { display: inline-flex; margin-top: 32px; border: 2px solid var(--ink); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; }
+.portfolio-switch > * { display: flex; align-items: center; min-height: 46px; padding: 10px 22px; }
+.portfolio-switch > * + * { border-left: 2px solid var(--ink); }
+.portfolio-switch [aria-current="page"] { background: var(--ink); color: var(--paper); }
+.portfolio-switch a { text-decoration: none; }
+.portfolio-switch a::after { margin-left: 10px; content: "→"; }
+.portfolio-switch a:hover, .portfolio-switch a:focus-visible { background: var(--accent); color: var(--ink); }
+.portfolio-switch a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 
 .game-list { padding-bottom: 88px; }
 .game { display: grid; grid-template-columns: minmax(48px, 0.35fr) minmax(280px, 1.15fr) minmax(280px, 0.9fr); gap: 24px; padding-block: 48px; border-top: 1px solid var(--line); }
@@ -49,18 +55,7 @@ h1 { max-width: 720px; margin: 0; font-size: clamp(2.45rem, 6vw, 5rem); letter-s
 .software-intro .intro-copy { max-width: 680px; margin: 24px 0 0; color: var(--secondary-ink); font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.05rem, 2vw, 1.28rem); line-height: 1.45; }
 .game-links { display: flex; flex-wrap: wrap; align-items: baseline; gap: 18px; margin-top: 20px; font-family: "Courier New", Courier, monospace; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; }
 .game-links .case-link { margin-top: 0; }
-.process-summary { padding: 8px 0 96px; }
-.process-summary-header { display: grid; grid-template-columns: minmax(280px, 0.8fr) minmax(320px, 1fr); gap: 56px; align-items: end; padding: 40px 0 32px; }
-.section-kicker, .process-number, .project-kicker { margin: 0; color: var(--accent); font-size: 0.76rem; font-weight: 700; letter-spacing: 0.1em; }
-.process-summary-header h2 { max-width: 560px; margin: 10px 0 0; font-size: clamp(2.35rem, 5vw, 4.2rem); letter-spacing: -0.045em; line-height: 0.98; }
-.process-intro { max-width: 610px; margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.15rem, 2vw, 1.45rem); line-height: 1.4; }
-.process-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; padding: 0; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--line); list-style: none; }
-.process-steps li { min-width: 0; padding: 24px 28px 28px 0; }
-.process-steps li + li { padding-left: 28px; border-left: 1px solid var(--line); }
-.process-number { display: block; margin-bottom: 28px; }
-.process-steps h3 { margin: 0 0 10px; font-size: clamp(1.3rem, 2.5vw, 1.75rem); letter-spacing: -0.025em; line-height: 1.08; }
-.process-steps p { max-width: 300px; margin: 0; }
-.process-link { margin-top: 24px; }
+.project-kicker { margin: 0; color: var(--accent); font-size: 0.76rem; font-weight: 700; letter-spacing: 0.1em; }
 
 .project-main { width: min(980px, calc(100% - 48px)); }
 .project-nav { display: flex; justify-content: space-between; padding-block: 28px; border-bottom: 1px solid var(--line); }
@@ -100,6 +95,7 @@ h1 { max-width: 720px; margin: 0; font-size: clamp(2.45rem, 6vw, 5rem); letter-s
 
 footer { display: flex; justify-content: space-between; padding-block: 28px; color: var(--secondary-ink); font-family: "Courier New", Courier, monospace; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; }
 footer p { margin: 0; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 8px 18px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 @media (max-width: 860px) {
@@ -107,22 +103,16 @@ footer p { margin: 0; }
   .preview-image { grid-column: 2; width: min(100%, 640px); margin-top: 8px; }
   .portrait-preview { width: min(100%, 170px); }
   .case-study { grid-template-columns: 1fr; gap: 24px; }
-  .process-summary-header { grid-template-columns: 1fr; gap: 20px; align-items: start; }
 }
 
 @media (max-width: 640px) {
   main, footer, .project-main { width: min(100% - 28px, var(--content)); }
   .intro { min-height: 48vh; }
+  .portfolio-switch > * { padding-inline: 16px; }
   .game { grid-template-columns: 28px 1fr; gap: 12px; padding-block: 36px; }
   .game-meta { flex-direction: column; gap: 2px; }
   .preview-image { grid-column: 1 / -1; margin-top: 8px; }
   .portrait-preview { width: min(100%, 170px); }
-  .process-summary { padding-bottom: 72px; }
-  .process-summary-header { padding-top: 32px; }
-  .process-steps { grid-template-columns: 1fr; }
-  .process-steps li { padding: 22px 0 24px; }
-  .process-steps li + li { padding-left: 0; border-top: 1px solid var(--line); border-left: 0; }
-  .process-number { margin-bottom: 14px; }
   .project-nav { padding-block: 20px; }
   .project-gallery { grid-template-columns: 1fr; gap: 12px; }
   .project-gallery.portrait-gallery { grid-template-columns: minmax(0, 278px); justify-content: center; }

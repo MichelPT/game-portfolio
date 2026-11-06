@@ -22,7 +22,7 @@ Open `http://localhost:4173`.
 - `index.html` is the software, iOS, mobile, AI, and interactive-work index.
 - `games/index.html` is the concise chronological game index.
 - `ios/index.html` redirects the former `/ios/` route to the homepage.
-- `design-practice.html` presents prototyping, playtesting, and design communication evidence.
+- `design-practice.html` presents prototyping and playtesting evidence; it is live but no longer linked from the index pages.
 - `games/*.html` contains the game index and full case studies.
 - `assets/` contains project media; images are displayed without cropping.
 - `styles.css` contains the shared visual system for the index and case studies.
