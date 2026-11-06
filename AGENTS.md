@@ -2,17 +2,17 @@
 
 ## Project
 
-Minimal static portfolio for Michel Pierce Tahya's games. Visual direction: editorial, direct, and text-led. Inspired by the clarity of `dukope.com`, without copying its design or content.
+Minimal static portfolio for Michel Pierce Tahya's software and games. Visual direction: editorial, direct, and text-led. Inspired by the clarity of `dukope.com`, without copying its design or content.
 
 ## Stack
 
 - Plain HTML, CSS, and minimal JavaScript
 - No build step or dependencies
-- Entry point: `index.html`
+- Entry point: `index.html` for software; `games/index.html` for games
 
 ## Design rules
 
-- Keep one chronological list of games as the core experience.
+- Keep one chronological list of games as the core experience at `/games/`.
 - Prefer strong typography, generous spacing, and restrained color.
 - Avoid card grids, gradients, glass effects, stock imagery, and decorative UI.
 - Make every line of copy useful. No marketing filler.
@@ -28,7 +28,7 @@ Minimal static portfolio for Michel Pierce Tahya's games. Visual direction: edit
 
 ## Editing
 
-- Concise game previews live directly in `index.html`.
+- Concise game previews live directly in `games/index.html`.
 - Full game case studies live in `games/*.html` and must link back to the chronological index.
 - Keep detailed process writing and complete galleries on case-study pages, not the homepage.
 - Global visual tokens live at top of `styles.css`.

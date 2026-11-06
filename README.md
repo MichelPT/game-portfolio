@@ -1,6 +1,6 @@
-# Michel Pierce Tahya — Game Portfolio
+# Michel Pierce Tahya — Software & Game Portfolio
 
-Minimal game portfolio inspired by the direct, chronological presentation of [dukope.com](https://dukope.com).
+Minimal software and game portfolio with a direct, chronological presentation.
 
 ## Preview
 
@@ -19,9 +19,11 @@ Open `http://localhost:4173`.
 
 ## Site structure
 
-- `index.html` is the concise chronological game index.
+- `index.html` is the software, iOS, mobile, AI, and interactive-work index.
+- `games/index.html` is the concise chronological game index.
+- `ios/index.html` redirects the former `/ios/` route to the homepage.
 - `design-practice.html` presents prototyping, playtesting, and design communication evidence.
-- `games/*.html` contains the full case study for each finished game.
+- `games/*.html` contains the game index and full case studies.
 - `assets/` contains project media; images are displayed without cropping.
 - `styles.css` contains the shared visual system for the index and case studies.
 - `scripts/check_site.py` validates every HTML page and its local references.

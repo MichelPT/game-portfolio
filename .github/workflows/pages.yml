@@ -30,6 +30,7 @@ jobs:
           mkdir _site
           cp index.html design-practice.html styles.css script.js _site/
           cp -R games _site/games
+          cp -R ios _site/ios
           cp -R assets _site/assets
           touch _site/.nojekyll
 
