@@ -3,52 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Fih Together — a systems, 3D art, and technical-art case study by Michel Pierce Tahya." />
-    <title>Fih Together — Michel Pierce Tahya</title>
+    <meta name="description" content="Fih Together, a multiplayer fishing game where the phone is the rod. Michel Pierce Tahya worked on game design, the 3D environment and shaders." />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <title>Fih Together – Michel Pierce Tahya</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
-  <body class="project-page">
-    <main class="project-main">
-      <nav class="project-nav" aria-label="Project navigation"><a class="back-link" href="index.html#games">← All games</a></nav>
-      <header class="project-hero">
-        <p class="project-kicker">Systems design case study</p>
-        <h1>Fih Together</h1>
-        <p class="project-lede">What if your phone actually felt like the fishing rod?</p>
-        <div class="project-meta"><span>Game design · 3D art · Technical art</span><time datetime="2026-07-12">Jul 12, 2026</time><span>Unity 6 · C#</span></div>
-      </header>
-      <figure class="project-feature portrait-feature"><img src="../assets/fih-together/mobile_gameplay.png" alt="Fih Together mobile fishing gameplay" /></figure>
+  <body>
+    <header class="wrap narrow">
+      <nav class="topbar" aria-label="Breadcrumb"><a class="back" href="index.html"><span aria-hidden="true">‹</span> All games</a></nav>
+    </header>
 
-      <section class="case-study" aria-labelledby="case-study-title">
-        <p class="case-study-label" id="case-study-title">Design notes</p>
-        <div class="case-sections">
-          <section class="case-section">
-            <h2>My contribution</h2>
-            <p>I worked as the game designer, 3D artist, and technical artist. I created the 3D environment and built the pixelated shaders, including the dynamic pixelated water animation.</p>
-          </section>
-          <section class="case-section">
-            <h2>The phone becomes the rod</h2>
-            <p>Fih Together is a multiplayer fishing game built around physical casting motion and haptic bite feedback. The interaction makes catching a fish something the player performs and feels, not just something they select.</p>
-          </section>
-          <section class="case-section">
-            <h2>A complete build in 20 minutes</h2>
-            <p>Each match takes place in a temporary shared session called a Pond. For up to 20 minutes, players fish side by side, compete on a live leaderboard, and level up through catches.</p>
-            <p>Each level offers temporary buffs that can compound into a powerful build. When the Pond ends, every build disappears. The reset keeps the next match fair and makes every choice in the current run matter.</p>
-          </section>
-          <section class="case-section">
-            <h2>The core loop</h2>
-            <p><strong>Cast → catch → level up → compound → repeat.</strong> Each catch advances both the immediate competition and the player’s temporary strategy for that Pond.</p>
-          </section>
-          <section class="case-section">
-            <h2>Does a virtual Pond need other people?</h2>
-            <p>A three-person playtest raised the project’s most important social question: what makes the virtual Pond, and the presence of other players, necessary? Players looked forward to the fellowship of fishing together, but the system needed to reward that feeling.</p>
-            <p>We responded with Pond sessions that one player can create and others can join. As more players join, the group gains a greater chance of catching better fish, giving social presence a mechanical purpose.</p>
-          </section>
+    <main class="wrap narrow">
+      <header class="case-header">
+        <h1>Fih Together</h1>
+        <p class="lede">A multiplayer fishing game where your phone is the rod. You cast with a real swing and feel the bite through haptics.</p>
+        <dl class="case-facts">
+        <div><dt>Role</dt><dd>Game design, 3D environment, technical art</dd></div>
+        <div><dt>Team</dt><dd>Five people</dd></div>
+        <div><dt>Date</dt><dd><time datetime="2026-07-12">July 12, 2026</time></dd></div>
+        <div><dt>Built with</dt><dd>Unity 6, C#</dd></div>
+        </dl>
+      </header>
+
+      <figure class="hero bleed"><img class="phone" src="../assets/fih-together/mobile_gameplay.png" width="536" height="1154" alt="Fishing gameplay on a phone" /></figure>
+
+      <div class="prose">
+        <section>
+          <h2>My part</h2>
+          <p>I worked on the game design and was the 3D and technical artist. I built the 3D environment and the pixelated shaders, including the animated water.</p>
+        </section>
+        <section>
+          <h2>How it plays</h2>
+          <p>A match happens in a shared session called a Pond, which lasts up to 20 minutes. Players fish side by side, climb a live leaderboard and level up as they catch fish.</p>
+          <p>Each level offers a temporary buff, and buffs stack into a stronger build over the match. When the Pond closes, every build resets, so the next match starts fair. The loop is cast, catch, level up, stack, repeat.</p>
+        </section>
+        <section>
+          <h2>What playtesting showed</h2>
+          <p>We ran a playtest with three people. They liked the idea of fishing together, but it raised a fair question: why does the game need a shared Pond and other players at all?</p>
+          <p>Our answer was to let one player open a Pond and others join it. The more people in a Pond, the higher the group’s chance of catching better fish, so playing together pays off.</p>
+        </section>
+      </div>
+      <section class="gallery-section bleed" aria-labelledby="in-development">
+        <h2 id="in-development">In development</h2>
+        <div class="gallery">
+          <figure><img src="../assets/fih-together/unity_environment.png" width="3024" height="1964" alt="The pond environment in the Unity editor" loading="lazy" /><figcaption>The pond environment in Unity 6.</figcaption></figure>
         </div>
       </section>
-      <section class="project-gallery" aria-label="Fih Together development images"><figure><img src="../assets/fih-together/unity_environment.png" alt="Fih Together pond environment during development in Unity 6" /></figure></section>
-      <nav class="project-pagination" aria-label="More games"><a href="the-chronicles-of-gilbert.html">← The Chronicles of Gilbert</a><a href="hellministrative.html">HellMinistrative →</a></nav>
+
+      <nav class="pager" aria-label="More games">
+        <a href="the-chronicles-of-gilbert.html"><small>Previous game</small><strong>The Chronicles of Gilbert</strong></a>
+        <a class="next" href="hellministrative.html"><small>Next game</small><strong>HellMinistrative</strong></a>
+      </nav>
     </main>
-    <footer><p>© <span id="year">2026</span> Michel Pierce Tahya</p></footer>
+
+    <footer class="site-footer wrap narrow">
+      <p>© <span id="year">2026</span> Michel Pierce Tahya</p>
+      <ul aria-label="Contact">
+        <li><a href="mailto:michelpiercetahya@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/micheltahya/" target="_blank" rel="noreferrer">LinkedIn ↗</a></li>
+        <li><a href="https://github.com/MichelPT" target="_blank" rel="noreferrer">GitHub ↗</a></li>
+        <li><a href="https://obil.itch.io" target="_blank" rel="noreferrer">itch.io ↗</a></li>
+      </ul>
+    </footer>
     <script src="../script.js"></script>
   </body>
 </html>

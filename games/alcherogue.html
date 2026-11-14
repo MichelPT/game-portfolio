@@ -3,81 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Alcherogue — a systems and gameplay design case study by Michel Pierce Tahya." />
-    <title>Alcherogue — Michel Pierce Tahya</title>
+    <meta name="description" content="Alcherogue, a solo alchemy shop game by Michel Pierce Tahya: two cut directions, design checks in Python, and a 15-player paper playtest." />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <title>Alcherogue – Michel Pierce Tahya</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
-  <body class="project-page">
-    <main class="project-main">
-      <nav class="project-nav" aria-label="Project navigation"><a class="back-link" href="index.html#games">← All games</a></nav>
-      <header class="project-hero">
-        <p class="project-kicker">Systems design case study</p>
+  <body>
+    <header class="wrap narrow">
+      <nav class="topbar" aria-label="Breadcrumb"><a class="back" href="index.html"><span aria-hidden="true">‹</span> All games</a></nav>
+    </header>
+
+    <main class="wrap narrow">
+      <header class="case-header">
         <h1>Alcherogue</h1>
-        <p class="project-lede">How close can you get when colour is your only measuring tool?</p>
-        <div class="project-meta"><span>Solo project</span><time datetime="2026-10-08">Oct 8, 2026</time><span>Design · Code · Illustration · Technical art</span><span>Unity 6 · C#</span></div>
+        <p class="lede">An alchemy shop game where you pour by eye. Recipes list the ingredients but never the amounts, so the colour of the liquid is the only measure you get.</p>
+        <dl class="case-facts">
+        <div><dt>Role</dt><dd>Solo: design, code, illustration, 2.5D technical art</dd></div>
+        <div><dt>Date</dt><dd><time datetime="2026-10-08">October 8, 2026</time></dd></div>
+        <div><dt>Built with</dt><dd>Unity 6, C#</dd></div>
+        <div><dt>Testing</dt><dd>15-player paper playtest, Python scripts</dd></div>
+        </dl>
       </header>
-      <figure class="project-feature"><img src="../assets/alcherogue/pouring_gameplay.png" alt="Alcherogue potion pouring gameplay" /></figure>
 
-      <section class="case-study" aria-labelledby="case-study-title">
-        <p class="case-study-label" id="case-study-title">Design process</p>
-        <div class="case-sections">
-          <section class="case-section">
-            <h2>I built the whole project</h2>
-            <p>Alcherogue is my solo project. I own the game design, programming, illustration, and technical-art direction, including its 2.5D presentation. That end-to-end ownership lets me test a design question and carry the answer through code, art, interface, and balance.</p>
-          </section>
-          <section class="case-section">
-            <h2>One decision, repeated at every scale</h2>
-            <p>Alcherogue is an alchemy shop game about pouring by eye. Recipes name the ingredients, but never the proportions. The liquid’s colour is the only instrument, and an accelerating stream makes every extra drop harder to control.</p>
-            <p>Potions land on a quality ladder instead of simply passing or failing. The same question then appears in pouring, pricing, stock, and auctions: take the sure result now, or reach for something better?</p>
-          </section>
-          <section class="case-section">
-            <h2>Why I cut two complete directions</h2>
-            <p>The first version was a quiz roguelite. After nine iterations, I found its structural limit: every question was spent once the answer was known. Adding more questions increased content, not depth.</p>
-            <p>The second version was a deduction game with scrambled jar labels. A short Python script proved that every four-jar arrangement could be solved in exactly two pours with one fixed strategy. The labels changed, but the thinking did not, so I cut it too.</p>
-          </section>
-          <section class="case-section">
-            <h2>What the numbers exposed</h2>
-            <ul>
-              <li>Economy simulations revealed excess free stock, predictable shortages, and rent pressure arriving too late.</li>
-              <li>Required precision varied by 3.1× between recipes, while visible hue feedback varied by 4.8×.</li>
-              <li>One recipe produced only 2.8° of visible hue change—unfair for a judgement made from memory.</li>
-              <li>A playable browser prototype made accelerating flow feel clearly stronger than constant flow.</li>
-            </ul>
-          </section>
-          <section class="case-section">
-            <h2>What did 15 players reveal?</h2>
-            <p>I tested the core loop as a paper prototype. Players chose a potion, poured into a customer’s container, and measured the result through stopwatch timing because the paper version had no liquid graphics. Most participants were highly engaged by the action.</p>
-            <p>The useful synthesis went deeper than enjoyment: did selling make currency feel important, did different container shapes create fair difficulty, what help did players need, and what would make them continue?</p>
-          </section>
-          <section class="case-section">
-            <h2>The container is part of the difficulty</h2>
-            <p>Container geometry was not cosmetic. Different customer shapes changed how hard the same pouring task felt. That is a distinctive part of the concept, but also a fairness problem: variety must create interesting judgement without making some orders arbitrarily punishing.</p>
-            <p>I am responding by limiting container varieties, adding a shop for refills and measuring aids, and strengthening the narrative so progression gives players a reason to keep improving.</p>
-          </section>
-          <section class="case-section">
-            <h2>The final design method</h2>
-            <p>I combined playable prototypes, verification scripts, perceptual testing, MDA, game-feel analysis, and genre comparison. The result puts the challenge directly in the player’s hands while using one input language—hold and release—for both pouring and haggling.</p>
-          </section>
+      <figure class="hero bleed"><img src="../assets/alcherogue/pouring_gameplay.png" width="2258" height="1040" alt="Pouring a potion in Alcherogue" /></figure>
+
+      <div class="prose">
+        <section>
+          <h2>My part</h2>
+          <p>Everything. It’s a solo project, so I designed it, programmed it in Unity 6 and C#, drew the illustrations and built the 2.5D look. Owning all of it meant I could test a design question and carry the answer straight through code, art, UI and balance.</p>
+        </section>
+        <section>
+          <h2>How it plays</h2>
+          <p>You pour ingredients into a flask and judge the mix by its colour. The stream speeds up the longer you hold, so a big pour is harder to stop on time. Each potion lands somewhere on a quality ladder instead of simply passing or failing.</p>
+          <p>The same choice comes back in rent, stock, haggling and auctions: take the safe result now, or push for a better one. Haggling uses the same hold-and-release input as pouring, so there’s one thing to learn.</p>
+        </section>
+        <section>
+          <h2>Two versions I threw away</h2>
+          <p>The first version was a quiz roguelite. After nine iterations I could see the problem. Once a player knew an answer, that question was used up. More questions meant more content, but the game never got deeper.</p>
+          <p>The second version was a deduction game with scrambled jar labels. I wrote a short Python script to check it, and it showed that every four-jar setup could be solved in exactly two pours with one fixed strategy. Once you knew the trick there was nothing left to think about, so I cut that too.</p>
+        </section>
+        <section>
+          <h2>Checking the numbers</h2>
+          <p>Before building ideas into the game, I tested them with Python scripts, economy simulations, perception tests and quick browser prototypes.</p>
+          <ul><li>Economy simulations showed too much free stock, shortages players could see coming, and rent pressure that arrived too late.</li><li>The precision recipes asked for varied 3.1× from one to another, while the colour change players could see varied 4.8×.</li><li>One recipe shifted the hue by only 2.8°, which is too small to judge fairly from memory.</li><li>In a browser prototype, accelerating flow felt clearly better than a constant stream.</li></ul>
+        </section>
+        <section>
+          <h2>Paper playtest with 15 players</h2>
+          <p>I tested the core loop on paper first. Players picked a potion, poured it into a customer’s container, and timed the pour with a stopwatch, since paper has no liquid to look at. Most of them got really into the pouring itself.</p>
+          <p>Enjoyment was only the start. I wanted to know whether selling made money feel important, whether different container shapes made orders fair, what help players needed, and what would make them keep playing.</p>
+        </section>
+        <section>
+          <h2>What I changed</h2>
+          <p>The biggest finding was the containers. A different shape made the same pour feel easier or harder. That’s part of what makes the game interesting, but it can also make some orders feel unfair.</p>
+          <p>So I’m limiting the number of container shapes, adding a shop where players can refill supplies or buy measuring aids, and writing a stronger story so players have a reason to keep going.</p>
+        </section>
+      </div>
+      <section class="gallery-section bleed" aria-labelledby="paper-prototype">
+        <h2 id="paper-prototype">Paper prototype</h2>
+        <div class="gallery">
+          <figure><img src="../assets/alcherogue/process/paper-playtest.jpg" width="1350" height="1800" alt="Michel watching a player test the Alcherogue paper prototype" loading="lazy" /><figcaption>Watching a player work through the paper version of the core loop.</figcaption></figure>
+          <figure><img src="../assets/alcherogue/process/prototype-materials.jpg" width="1200" height="1600" alt="Handmade potion, container, recipe, day and currency cards for the paper prototype" loading="lazy" /><figcaption>The handmade kit: potions, recipes, containers, days and currency.</figcaption></figure>
+          <figure><img src="../assets/alcherogue/process/design-process.jpg" width="1200" height="1600" alt="A paper interface next to a digital narrative flow" loading="lazy" /><figcaption>The paper interface next to a digital map of the story.</figcaption></figure>
+        </div>
+      </section>
+      <section class="gallery-section bleed" aria-labelledby="screenshots">
+        <h2 id="screenshots">Screenshots</h2>
+        <div class="gallery">
+          <figure><img src="../assets/alcherogue/vvip_request.png" width="2258" height="1050" alt="A customer asking for an exact potion blend" loading="lazy" /></figure>
+          <figure><img src="../assets/alcherogue/sold_success.png" width="2264" height="1042" alt="Sale result with a quality breakdown" loading="lazy" /></figure>
+          <figure><img src="../assets/alcherogue/narratives.png" width="2256" height="1032" alt="A customer’s story introduction" loading="lazy" /></figure>
         </div>
       </section>
 
-      <section class="process-evidence" aria-labelledby="prototype-evidence-title">
-        <p class="case-study-label" id="prototype-evidence-title">Prototype evidence</p>
-        <div class="project-gallery evidence-gallery">
-          <figure><img src="../assets/alcherogue/process/paper-playtest.jpg" alt="Michel observing an Alcherogue paper-prototype playtest" /><figcaption>Watching a player work through the paper version of the core loop.</figcaption></figure>
-          <figure><img src="../assets/alcherogue/process/prototype-materials.jpg" alt="Handmade potion, container, recipe, day, and currency cards for the Alcherogue paper prototype" /><figcaption>The handmade kit made recipes, currency, days, and container shapes testable without code.</figcaption></figure>
-          <figure><img src="../assets/alcherogue/process/design-process.jpg" alt="A paper interface beside a digital narrative flow during Alcherogue design work" /><figcaption>Mapping narrative progression while testing the interface at paper scale.</figcaption></figure>
-        </div>
-      </section>
-
-      <section class="project-gallery" aria-label="Alcherogue screenshots">
-        <figure><img src="../assets/alcherogue/vvip_request.png" alt="Customer requesting an exact potion blend" /></figure>
-        <figure><img src="../assets/alcherogue/sold_success.png" alt="Potion sale result and quality breakdown" /></figure>
-        <figure><img src="../assets/alcherogue/narratives.png" alt="Customer narrative introduction" /></figure>
-      </section>
-      <nav class="project-pagination" aria-label="More games"><a href="nimbus-harvest.html">← Nimbus Harvest</a><a href="not-very-disco.html">(Not) Very Disco →</a></nav>
+      <nav class="pager" aria-label="More games">
+        <a href="nimbus-harvest.html"><small>Previous game</small><strong>Nimbus Harvest</strong></a>
+        <a class="next" href="not-very-disco.html"><small>Next game</small><strong>(Not) Very Disco</strong></a>
+      </nav>
     </main>
-    <footer><p>© <span id="year">2026</span> Michel Pierce Tahya</p></footer>
+
+    <footer class="site-footer wrap narrow">
+      <p>© <span id="year">2026</span> Michel Pierce Tahya</p>
+      <ul aria-label="Contact">
+        <li><a href="mailto:michelpiercetahya@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/micheltahya/" target="_blank" rel="noreferrer">LinkedIn ↗</a></li>
+        <li><a href="https://github.com/MichelPT" target="_blank" rel="noreferrer">GitHub ↗</a></li>
+        <li><a href="https://obil.itch.io" target="_blank" rel="noreferrer">itch.io ↗</a></li>
+      </ul>
+    </footer>
     <script src="../script.js"></script>
   </body>
 </html>

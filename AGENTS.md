@@ -2,7 +2,7 @@
 
 ## Project
 
-Minimal static portfolio for Michel Pierce Tahya's software and games. Visual direction: editorial, direct, and text-led. Inspired by the clarity of `dukope.com`, without copying its design or content.
+Minimal static portfolio for Michel Pierce Tahya's software and games. Visual direction: clean, direct, and text-led, following Apple Human Interface Guidelines principles: system font, clear size and weight hierarchy, 17px body text, 44px tap targets, and light and dark mode.
 
 ## Stack
 
@@ -16,6 +16,7 @@ Minimal static portfolio for Michel Pierce Tahya's software and games. Visual di
 - Prefer strong typography, generous spacing, and restrained color.
 - Avoid card grids, gradients, glass effects, stock imagery, and decorative UI.
 - Make every line of copy useful. No marketing filler.
+- Write copy in plain first person. Avoid rhetorical-question hooks, "not X but Y" constructions, em dashes, and inflated words.
 - Keep layout responsive and keyboard accessible.
 - Respect `prefers-reduced-motion`.
 

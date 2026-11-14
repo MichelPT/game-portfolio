@@ -3,154 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Software, iOS, mobile, AI, and interactive work by Michel Pierce Tahya." />
+    <meta name="description" content="iOS, Android, desktop and web projects by Michel Pierce Tahya, a software and mobile developer." />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
     <title>Software by Michel Pierce Tahya</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main id="top">
-      <nav class="portfolio-switch" aria-label="Portfolio sections"><a href="games/">Games</a></nav>
-      <section class="intro" aria-labelledby="page-title">
-        <p class="role-title">Software and Mobile Developer</p>
-        <h1 id="page-title">Software by Michel Pierce Tahya</h1>
-      </section>
+    <header class="wrap">
+      <nav class="topbar topbar-end" aria-label="Portfolio sections"><a class="button" href="games/">Games <span aria-hidden="true">→</span></a></nav>
+      <div class="page-header">
+        <p class="eyebrow">Software and Mobile Developer</p>
+        <h1>Software by Michel Pierce Tahya</h1>
+      </div>
+    </header>
 
-      <section class="game-list" id="work" aria-label="Selected software and interactive work">
-        <article class="game game-preview">
-          <div class="game-number" aria-hidden="true">06</div>
-          <div class="game-body">
-            <div class="game-meta"><span class="status released">Released</span><time datetime="2026-05-25">May 25, 2026</time></div>
-            <h2><a href="games/nimbus-harvest.html">Nimbus Harvest</a></h2>
-            <p class="game-hook">A native iOS game where the local forecast becomes a live product system.</p>
-            <p class="game-copy">Designed the weather-driven farming loop and built the interface with Apple frameworks. Shipped on the App Store and followed the release with a product patch.</p>
-            <ul class="tag-list" aria-label="Nimbus Harvest technologies and skills">
-              <li>SwiftUI</li>
-              <li>SwiftData</li>
-              <li>WeatherKit</li>
-              <li>WidgetKit</li>
-              <li>App Store</li>
-            </ul>
-            <div class="game-links">
-              <a class="case-link" href="games/nimbus-harvest.html">Read case study →</a>
-              <a href="https://apps.apple.com/id/app/nimbus-harvest/id6770053044" target="_blank" rel="noreferrer">App Store ↗</a>
-            </div>
-          </div>
-          <a class="preview-image portrait-preview" href="games/nimbus-harvest.html" aria-label="Read the Nimbus Harvest case study">
-            <img src="assets/nimbus-harvest/farm_page.png" alt="Nimbus Harvest farm reacting to real weather" />
-          </a>
-        </article>
-
-        <article class="game game-preview">
-          <div class="game-number" aria-hidden="true">05</div>
-          <div class="game-body">
-            <div class="game-meta"><span>Mobile development</span><time datetime="2026-10">Oct 2026</time></div>
-            <h2><a href="games/alcherogue.html">Alcherogue</a></h2>
-            <p class="game-hook">A mobile game built as a reproducible, testable software system.</p>
-            <p class="game-copy">Built deterministic seeded runs, debug-state tools, playtest logging, screenshot workflows, and iOS build tracking. Verified layouts across iPhone, iPhone SE, and iPad aspect ratios.</p>
-            <ul class="tag-list" aria-label="Alcherogue technologies and skills">
-              <li>Unity 6</li>
-              <li>C#</li>
-              <li>Developer tooling</li>
-              <li>iOS builds</li>
-              <li>Python verification</li>
-            </ul>
-            <a class="case-link" href="games/alcherogue.html">Read case study →</a>
-          </div>
-          <a class="preview-image" href="games/alcherogue.html" aria-label="Read the Alcherogue case study">
-            <img src="assets/alcherogue/pouring_gameplay.png" alt="Alcherogue potion pouring gameplay" />
-          </a>
-        </article>
-
-        <article class="game game-preview">
-          <div class="game-number" aria-hidden="true">04</div>
-          <div class="game-body">
-            <div class="game-meta"><span>AI mobile application</span><time datetime="2025-06">Jun 2025</time></div>
-            <h2>Matakba</h2>
-            <p class="game-hook">Real-time ancient Batak-script recognition on lower-end Android devices.</p>
-            <p class="game-copy">Developed a mobile app that recognises and transliterates more than 160 characters. Converted a YOLOv11s model from PyTorch to NCNN and integrated inference through C++ and the Android NDK.</p>
-            <ul class="tag-list" aria-label="Matakba technologies and skills">
-              <li>Android</li>
-              <li>YOLOv11s</li>
-              <li>C++</li>
-              <li>Android NDK</li>
-              <li>NCNN</li>
-            </ul>
-          </div>
-          <div class="preview-image">
-            <img src="assets/software/matakba-live-recognition.png" alt="Matakba recognizing Batak-script characters live through a phone camera" />
-          </div>
-        </article>
-
-        <article class="game game-preview">
-          <div class="game-number" aria-hidden="true">03</div>
-          <div class="game-body">
-            <div class="game-meta"><span>Production software</span><time datetime="2025-11">Nov 2025</time></div>
-            <h2>L’Union Photobooth</h2>
-            <p class="game-hook">Desktop hardware control and a web dashboard in one production workflow.</p>
-            <p class="game-copy">Built a Windows photobooth in C#/WPF with live webcam control, automated printing, and a React admin dashboard. Shipped four major UI/UX revisions and nine patches in response to user feedback.</p>
-            <ul class="tag-list" aria-label="L’Union Photobooth technologies and skills">
-              <li>C#</li>
-              <li>WPF</li>
-              <li>React</li>
-              <li>Hardware integration</li>
-              <li>Production support</li>
-            </ul>
-          </div>
-          <div class="preview-image">
-            <img src="assets/software/lunion-photobooth-ui.jpg" alt="L’Union Photobooth interface flow from welcome and payment through capture and printing" />
-          </div>
-        </article>
-
-        <article class="game game-preview">
-          <div class="game-number" aria-hidden="true">02</div>
-          <div class="game-body">
-            <div class="game-meta"><span>AI &amp; data software</span><time datetime="2025-11">Nov 2025</time></div>
-            <h2>Petrophysics WebApps</h2>
-            <p class="game-hook">Operational data-quality and scientific workflows made interactive.</p>
-            <p class="game-copy">Contributed to AI/ML deployment and built Python and JavaScript workflows, automated data-quality pipelines, and interactive Dataiku visualisations for petrophysical calculations.</p>
-            <ul class="tag-list" aria-label="Petrophysics WebApps technologies and skills">
-              <li>Python</li>
-              <li>JavaScript</li>
-              <li>Dataiku</li>
-              <li>Data pipelines</li>
-              <li>AI/ML deployment</li>
-            </ul>
-          </div>
-          <div class="preview-image">
-            <img src="assets/software/well-logging-analysis.png" alt="Interactive well-logging analysis interface with multiple petrophysical tracks and controls" />
-          </div>
-        </article>
-
-        <article class="game game-preview">
-          <div class="game-number" aria-hidden="true">01</div>
-          <div class="game-body">
-            <div class="game-meta"><span>Interactive systems</span><time datetime="2026">2026</time></div>
-            <h2><a href="games/">Games &amp; Prototypes</a></h2>
-            <p class="game-hook">Software built to make systems understandable, playable, and responsive.</p>
-            <p class="game-copy">Completed six games across native iOS, Unity, and Godot—covering mobile interactions, multiplayer systems, deterministic simulations, UI implementation, technical art, accessibility, and rapid iteration.</p>
-            <ul class="tag-list" aria-label="Games and prototypes technologies and skills">
-              <li>Unity</li>
-              <li>Godot</li>
-              <li>SwiftUI</li>
-              <li>Systems design</li>
-              <li>Playtesting</li>
-            </ul>
-            <a class="case-link" href="games/">Explore all six games →</a>
-          </div>
-          <a class="preview-image" href="games/" aria-label="Explore the complete game portfolio">
-            <img src="assets/fih-together/unity_environment.png" alt="Fih Together stylised multiplayer fishing environment" />
-          </a>
-        </article>
-      </section>
+    <main class="wrap" aria-label="Software projects">
+      <article class="work">
+        <div>
+          <h2><a href="games/nimbus-harvest.html">Nimbus Harvest</a></h2>
+          <p class="meta">iOS · <time datetime="2026-05-25">May 2026</time> · On the App Store</p>
+          <p class="summary">A cozy farming game that runs on the player’s real local forecast. Sun, rain, snow, wind and heat change how each crop grows. It’s live on the App Store and has had one update since launch.</p>
+          <dl class="facts">
+            <div><dt>My part</dt><dd>Game design, UI design and implementation, gameplay polish</dd></div>
+            <div><dt>Built with</dt><dd>SwiftUI, SwiftData, WeatherKit, WidgetKit</dd></div>
+          </dl>
+          <ul class="links"><li><a href="games/nimbus-harvest.html">Read the case study ›</a></li><li><a href="https://apps.apple.com/id/app/nimbus-harvest/id6770053044" target="_blank" rel="noreferrer">App Store ↗</a></li></ul>
+        </div>
+        <a class="work-media" href="games/nimbus-harvest.html" tabindex="-1" aria-hidden="true"><img class="phone" src="assets/nimbus-harvest/farm_page.png" width="1206" height="2622" alt="Nimbus Harvest farm on a sunny day" /></a>
+      </article>
+      <article class="work">
+        <div>
+          <h2><a href="games/alcherogue.html">Alcherogue</a></h2>
+          <p class="meta">Unity · <time datetime="2026-10-08">October 2026</time> · Solo project</p>
+          <p class="summary">A potion-pouring game I built to be easy to test. Every run comes from a seed, so the same seed and the same inputs play out the same way. I also wrote tools to jump between game states, take screenshots, log playtests and track iOS builds, and checked the layout on iPhone, iPhone SE and iPad.</p>
+          <dl class="facts">
+            <div><dt>My part</dt><dd>Everything: design, code, illustration, technical art</dd></div>
+            <div><dt>Built with</dt><dd>Unity 6, C#, Python</dd></div>
+          </dl>
+          <ul class="links"><li><a href="games/alcherogue.html">Read the case study ›</a></li></ul>
+        </div>
+        <a class="work-media" href="games/alcherogue.html" tabindex="-1" aria-hidden="true"><img src="assets/alcherogue/pouring_gameplay.png" width="2258" height="1040" alt="Alcherogue potion pouring gameplay" loading="lazy" /></a>
+      </article>
+      <article class="work">
+        <div>
+          <h2>L’Union Photobooth</h2>
+          <p class="meta">Windows and web · <time datetime="2025-09">September</time>–<time datetime="2025-11">November 2025</time> · L’Union Pizza Restaurant, Yogyakarta</p>
+          <p class="summary">A production photobooth for a restaurant. The Windows app controls the webcam and prints photos automatically, and a React dashboard handles admin. Working from user feedback, I shipped four major UI/UX revisions and nine patches.</p>
+          <dl class="facts">
+            <div><dt>My part</dt><dd>Full-stack: desktop app and admin dashboard</dd></div>
+            <div><dt>Built with</dt><dd>C#, WPF, React</dd></div>
+          </dl>
+        </div>
+        <div class="work-media"><img src="assets/software/lunion-photobooth-ui.jpg" width="1920" height="777" alt="L’Union Photobooth screens, from the welcome screen through payment, capture and printing" loading="lazy" /></div>
+      </article>
+      <article class="work">
+        <div>
+          <h2>Matakba</h2>
+          <p class="meta">Android · <time datetime="2025-06">June 2025</time> · University capstone</p>
+          <p class="summary">An Android app that reads ancient Batak script through the camera and transliterates it. It recognises more than 160 characters and averages under 30 ms per frame on lower-end phones. I trained a YOLOv11s model, added cross-attention, and converted it from PyTorch to NCNN to run on the device.</p>
+          <dl class="facts">
+            <div><dt>My part</dt><dd>Data annotation, model training, on-device inference</dd></div>
+            <div><dt>Built with</dt><dd>YOLOv11s, PyTorch, NCNN, C++, Android NDK</dd></div>
+          </dl>
+        </div>
+        <div class="work-media"><img src="assets/software/matakba-live-recognition.png" width="817" height="643" alt="Matakba recognising Batak characters live through a phone camera" loading="lazy" /></div>
+      </article>
+      <article class="work">
+        <div>
+          <h2>Petrophysics web apps</h2>
+          <p class="meta">Web · <time datetime="2025-06">June</time>–<time datetime="2025-11">November 2025</time> · PT Pertamina Hulu Rokan</p>
+          <p class="summary">Interactive web apps for petrophysical calculations. I built Python and JavaScript workflows and Dataiku visualisations, set up automated data-quality pipelines across more than 100 wells, and helped deploy AI/ML models into the apps.</p>
+          <dl class="facts">
+            <div><dt>My part</dt><dd>AI and software engineering, project-based</dd></div>
+            <div><dt>Built with</dt><dd>Python, JavaScript, Dataiku</dd></div>
+          </dl>
+        </div>
+        <div class="work-media"><img src="assets/software/well-logging-analysis.png" width="1400" height="643" alt="Well-log analysis app with several petrophysical tracks and controls" loading="lazy" /></div>
+      </article>
+      <p class="more">I also design games. All six are on the <a href="games/">games page ›</a></p>
     </main>
 
-    <footer>
+    <footer class="site-footer wrap">
       <p>© <span id="year">2026</span> Michel Pierce Tahya</p>
-      <nav class="footer-links" aria-label="Contact">
-        <a href="mailto:michelpiercetahya@gmail.com">Email ↗</a>
-        <a href="https://www.linkedin.com/in/micheltahya/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-        <a href="https://github.com/MichelPT" target="_blank" rel="noreferrer">GitHub ↗</a>
-      </nav>
+      <ul aria-label="Contact">
+        <li><a href="mailto:michelpiercetahya@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/micheltahya/" target="_blank" rel="noreferrer">LinkedIn ↗</a></li>
+        <li><a href="https://github.com/MichelPT" target="_blank" rel="noreferrer">GitHub ↗</a></li>
+        <li><a href="https://obil.itch.io" target="_blank" rel="noreferrer">itch.io ↗</a></li>
+      </ul>
     </footer>
     <script src="script.js"></script>
   </body>

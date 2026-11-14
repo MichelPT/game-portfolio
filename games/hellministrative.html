@@ -3,51 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="HellMinistrative — a gameplay design case study by Michel Pierce Tahya." />
-    <title>HellMinistrative — Michel Pierce Tahya</title>
+    <meta name="description" content="HellMinistrative, a game jam typing game. Michel Pierce Tahya made and implemented the 3D table and CAPTCHA art." />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <title>HellMinistrative – Michel Pierce Tahya</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
-  <body class="project-page">
-    <main class="project-main">
-      <nav class="project-nav" aria-label="Project navigation"><a class="back-link" href="index.html#games">← All games</a></nav>
-      <header class="project-hero">
-        <p class="project-kicker">Pressure-system case study</p>
-        <h1>HellMinistrative</h1>
-        <p class="project-lede">How fast can you type when every document is about to expire?</p>
-        <div class="project-meta"><span>3D art · Illustration · Implementation</span><time datetime="2026-07-04">Jul 4, 2026</time><span>Game Seed 2026</span></div>
-        <div class="project-links"><a href="https://obil.itch.io/hellministrative" target="_blank" rel="noreferrer">Play on itch.io ↗</a></div>
-      </header>
-      <figure class="project-feature"><img src="../assets/hellministrative/gameplay-1.png" alt="HellMinistrative document queue and overheat bar" /></figure>
+  <body>
+    <header class="wrap narrow">
+      <nav class="topbar" aria-label="Breadcrumb"><a class="back" href="index.html"><span aria-hidden="true">‹</span> All games</a></nav>
+    </header>
 
-      <section class="case-study" aria-labelledby="case-study-title">
-        <p class="case-study-label" id="case-study-title">Design notes</p>
-        <div class="case-sections">
-          <section class="case-section">
-            <h2>My contribution</h2>
-            <p>I created the 3D table and implemented it in the game. I also illustrated the CAPTCHA content and implemented it as part of the pressure system.</p>
-          </section>
-          <section class="case-section">
-            <h2>The theme was “So Absurd, It’s Cool”</h2>
-            <p>HellMinistrative turns the Devil’s administration requests into a typing game. The absurd premise supports a serious challenge: stay accurate while deciding which document deserves attention first.</p>
-          </section>
-          <section class="case-section">
-            <h2>Three systems create the pressure</h2>
-            <ul>
-              <li><strong>Overheat:</strong> time and typing accuracy determine whether the level is won or lost.</li>
-              <li><strong>CAPTCHA:</strong> an urgent event that raises heat 1.5× faster until solved.</li>
-              <li><strong>Document priority:</strong> every request carries its own weight and disappears if ignored for too long.</li>
-            </ul>
-          </section>
-          <section class="case-section">
-            <h2>Typing is only half the challenge</h2>
-            <p>The player must read the queue, judge what matters now, and stay accurate while every delay becomes more expensive. Speed without prioritisation can still lose the level.</p>
-          </section>
+    <main class="wrap narrow">
+      <header class="case-header">
+        <h1>HellMinistrative</h1>
+        <p class="lede">A typing game about getting through the Devil’s paperwork before the overheat bar decides it for you.</p>
+        <dl class="case-facts">
+        <div><dt>Role</dt><dd>3D table and CAPTCHA art, built into the game</dd></div>
+        <div><dt>Date</dt><dd><time datetime="2026-07-04">July 4, 2026</time></dd></div>
+        <div><dt>Event</dt><dd>Game Seed 2026</dd></div>
+        <div><dt>Theme</dt><dd>So Absurd, It’s Cool</dd></div>
+        </dl>
+        <div class="actions"><a class="button" href="https://obil.itch.io/hellministrative" target="_blank" rel="noreferrer">Play on itch.io <span aria-hidden="true">↗</span></a></div>
+      </header>
+
+      <figure class="hero bleed"><img src="../assets/hellministrative/gameplay-1.png" width="1922" height="1158" alt="The document queue and overheat bar" /></figure>
+
+      <div class="prose">
+        <section>
+          <h2>My part</h2>
+          <p>I modelled the 3D table and put it in the game. I also drew the CAPTCHA images and built them into the game’s pressure system.</p>
+        </section>
+        <section>
+          <h2>How it plays</h2>
+          <p>The Devil keeps sending administrative requests and you type them out. Your speed and accuracy feed an overheat bar, and that bar decides whether you win or lose the level.</p>
+          <ul><li><strong>CAPTCHAs</strong> interrupt you and make heat rise 1.5× faster until you solve them.</li><li><strong>Documents</strong> each carry their own priority and disappear if you leave them too long.</li></ul>
+        </section>
+        <section>
+          <h2>Why speed isn’t enough</h2>
+          <p>Fast typing on the wrong document still loses. You have to read the queue, decide what matters right now, and stay accurate while every delay costs more.</p>
+        </section>
+      </div>
+      <section class="gallery-section bleed" aria-labelledby="screenshots">
+        <h2 id="screenshots">Screenshots</h2>
+        <div class="gallery">
+          <figure><img src="../assets/hellministrative/gameplay-2.png" width="1920" height="1156" alt="A typing task in progress" loading="lazy" /></figure>
         </div>
       </section>
-      <section class="project-gallery" aria-label="HellMinistrative screenshots"><figure><img src="../assets/hellministrative/gameplay-2.png" alt="HellMinistrative typing task in progress" /></figure></section>
-      <nav class="project-pagination" aria-label="More games"><a href="fih-together.html">← Fih Together</a><a href="nimbus-harvest.html">Nimbus Harvest →</a></nav>
+
+      <nav class="pager" aria-label="More games">
+        <a href="fih-together.html"><small>Previous game</small><strong>Fih Together</strong></a>
+        <a class="next" href="nimbus-harvest.html"><small>Next game</small><strong>Nimbus Harvest</strong></a>
+      </nav>
     </main>
-    <footer><p>© <span id="year">2026</span> Michel Pierce Tahya</p></footer>
+
+    <footer class="site-footer wrap narrow">
+      <p>© <span id="year">2026</span> Michel Pierce Tahya</p>
+      <ul aria-label="Contact">
+        <li><a href="mailto:michelpiercetahya@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/micheltahya/" target="_blank" rel="noreferrer">LinkedIn ↗</a></li>
+        <li><a href="https://github.com/MichelPT" target="_blank" rel="noreferrer">GitHub ↗</a></li>
+        <li><a href="https://obil.itch.io" target="_blank" rel="noreferrer">itch.io ↗</a></li>
+      </ul>
+    </footer>
     <script src="../script.js"></script>
   </body>
 </html>

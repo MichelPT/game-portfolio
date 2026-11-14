@@ -3,52 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="(Not) Very Disco — a gameplay design case study by Michel Pierce Tahya." />
-    <title>(Not) Very Disco — Michel Pierce Tahya</title>
+    <meta name="description" content="(Not) Very Disco, a game jam reaction game. Michel Pierce Tahya made the character art, animation, effects and UI." />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <title>(Not) Very Disco – Michel Pierce Tahya</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
-  <body class="project-page">
-    <main class="project-main">
-      <nav class="project-nav" aria-label="Project navigation"><a class="back-link" href="index.html#games">← All games</a></nav>
-      <header class="project-hero">
-        <p class="project-kicker">Gameplay design case study</p>
-        <h1>(Not) Very Disco</h1>
-        <p class="project-lede">Can you read the crowd before the beat gets ahead of you?</p>
-        <div class="project-meta"><span>Character art · Animation · UI · Polish</span><time datetime="2026-09-30">Sep 30, 2026</time><span>Very Disco Game Jam 2026</span></div>
-        <div class="project-links"><a href="https://obil.itch.io/not-very-disco" target="_blank" rel="noreferrer">Play on itch.io ↗</a><a href="https://itch.io/jam/very-disco-game-jam-2026-3" target="_blank" rel="noreferrer">View the jam ↗</a></div>
-      </header>
-      <figure class="project-feature"><img src="../assets/not-very-disco/gameplay-1.png" alt="(Not) Very Disco successful high five and combo" /></figure>
+  <body>
+    <header class="wrap narrow">
+      <nav class="topbar" aria-label="Breadcrumb"><a class="back" href="index.html"><span aria-hidden="true">‹</span> All games</a></nav>
+    </header>
 
-      <section class="case-study" aria-labelledby="case-study-title">
-        <p class="case-study-label" id="case-study-title">Design notes</p>
-        <div class="case-sections">
-          <section class="case-section">
-            <h2>My contribution</h2>
-            <p>I created every character sprite and animation, the visual effects, and the UI design and implementation. I also focused on gameplay polish: making each successful read immediate, legible, and satisfying.</p>
-          </section>
-          <section class="case-section">
-            <h2>The theme was “Compact”</h2>
-            <p>I interpreted compact twice: a single-touch control scheme and a dance floor packed with people. Friends want a high five. Pickpockets want your belongings. Both look ordinary until they reveal themselves.</p>
-          </section>
-          <section class="case-section">
-            <h2>Two inputs, escalating pressure</h2>
-            <p>Friend means tap left. Pickpocket means tap right. A correct read builds combo and score; acting too early, too late, or choosing incorrectly costs a life.</p>
-            <p>The game grows harder through faster arrivals and smaller reaction windows instead of adding more controls. The core rule stays readable while the timing becomes demanding.</p>
-          </section>
-          <section class="case-section">
-            <h2>Feedback carries the design</h2>
-            <p>Visual, audio, and haptic feedback distinguish the two actions and make each result immediate. Reduce Motion and separate BGM, SFX, and haptic settings let players adjust the experience without changing the core rule.</p>
-          </section>
-          <section class="case-section">
-            <h2>What changed after the playable prototype?</h2>
-            <p>Players wanted each impact to feel stronger and the competition to feel clearer. I revised and redrew animations so they moved faster without losing weight, then added impact techniques including hit stop. The result made correct actions feel snappier and more satisfying.</p>
-          </section>
+    <main class="wrap narrow">
+      <header class="case-header">
+        <h1>(Not) Very Disco</h1>
+        <p class="lede">A two-button reaction game on a packed dance floor. Tap left to high-five a friend, tap right to stop a pickpocket.</p>
+        <dl class="case-facts">
+        <div><dt>Role</dt><dd>Character art and animation, visual effects, UI, gameplay polish</dd></div>
+        <div><dt>Date</dt><dd><time datetime="2026-09-30">September 30, 2026</time></dd></div>
+        <div><dt>Event</dt><dd>Very Disco Game Jam 2026</dd></div>
+        <div><dt>Theme</dt><dd>Compact</dd></div>
+        </dl>
+        <div class="actions"><a class="button" href="https://obil.itch.io/not-very-disco" target="_blank" rel="noreferrer">Play on itch.io <span aria-hidden="true">↗</span></a><a class="button" href="https://itch.io/jam/very-disco-game-jam-2026-3" target="_blank" rel="noreferrer">Jam page <span aria-hidden="true">↗</span></a></div>
+      </header>
+
+      <figure class="hero bleed"><img src="../assets/not-very-disco/gameplay-1.png" width="2982" height="1352" alt="A successful high five and combo in (Not) Very Disco" /></figure>
+
+      <div class="prose">
+        <section>
+          <h2>My part</h2>
+          <p>I drew and animated every character and made the visual effects. I also designed and built the UI, and worked on how each correct read feels the moment it lands.</p>
+        </section>
+        <section>
+          <h2>Reading the theme</h2>
+          <p>The jam theme was “Compact”, and I took it two ways: a one-touch control scheme and a dance floor crammed with people. Friends want a high five and pickpockets want your things. They look alike until they make their move.</p>
+        </section>
+        <section>
+          <h2>How it gets harder</h2>
+          <p>A correct read adds to your combo and score. Tapping too early, too late or on the wrong side costs a life.</p>
+          <p>The controls never change. People just arrive faster and the window to react gets shorter, so the rule stays easy to read while the timing gets tough.</p>
+        </section>
+        <section>
+          <h2>Feedback and settings</h2>
+          <p>Each action has its own visual, sound and haptic response, so you know right away what happened. Players can turn on Reduce Motion and set music, sound effects and haptics separately.</p>
+        </section>
+        <section>
+          <h2>What changed after playtesting</h2>
+          <p>Players wanted hits to land harder and the game to feel more competitive. I redrew the animations so they read faster without losing weight, then added hit stop and other impact techniques. Correct taps feel much snappier now.</p>
+        </section>
+      </div>
+      <section class="gallery-section bleed" aria-labelledby="screenshots">
+        <h2 id="screenshots">Screenshots</h2>
+        <div class="gallery">
+          <figure><img src="../assets/not-very-disco/gameplay-2.png" width="2830" height="1338" alt="A pickpocket approaching on the dance floor" loading="lazy" /></figure>
         </div>
       </section>
-      <section class="project-gallery" aria-label="(Not) Very Disco screenshots"><figure><img src="../assets/not-very-disco/gameplay-2.png" alt="Pickpocket approaching on the dance floor" /></figure></section>
-      <nav class="project-pagination" aria-label="More games"><a href="alcherogue.html">← Alcherogue</a><a href="the-chronicles-of-gilbert.html">The Chronicles of Gilbert →</a></nav>
+
+      <nav class="pager" aria-label="More games">
+        <a href="alcherogue.html"><small>Previous game</small><strong>Alcherogue</strong></a>
+        <a class="next" href="the-chronicles-of-gilbert.html"><small>Next game</small><strong>The Chronicles of Gilbert</strong></a>
+      </nav>
     </main>
-    <footer><p>© <span id="year">2026</span> Michel Pierce Tahya</p></footer>
+
+    <footer class="site-footer wrap narrow">
+      <p>© <span id="year">2026</span> Michel Pierce Tahya</p>
+      <ul aria-label="Contact">
+        <li><a href="mailto:michelpiercetahya@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/micheltahya/" target="_blank" rel="noreferrer">LinkedIn ↗</a></li>
+        <li><a href="https://github.com/MichelPT" target="_blank" rel="noreferrer">GitHub ↗</a></li>
+        <li><a href="https://obil.itch.io" target="_blank" rel="noreferrer">itch.io ↗</a></li>
+      </ul>
+    </footer>
     <script src="../script.js"></script>
   </body>
 </html>

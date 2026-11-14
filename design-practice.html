@@ -3,48 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="How Michel Pierce Tahya prototypes, playtests, and communicates game-design systems." />
-    <title>Design Practice — Michel Pierce Tahya</title>
+    <meta name="description" content="How Michel Pierce Tahya prototypes and playtests game designs." />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <title>Design practice – Michel Pierce Tahya</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="project-page">
-    <main class="project-main">
-      <nav class="project-nav" aria-label="Page navigation"><a class="back-link" href="games/">← Games</a></nav>
-      <header class="project-hero">
-        <p class="project-kicker">Process</p>
+  <body>
+    <header class="wrap narrow">
+      <nav class="topbar" aria-label="Breadcrumb"><a class="back" href="games/"><span aria-hidden="true">‹</span> Games</a></nav>
+    </header>
+
+    <main class="wrap narrow">
+      <header class="case-header">
         <h1>Design practice</h1>
-        <p class="project-lede">I turn design questions into small tests, watch what players do, and use the evidence to decide what changes.</p>
+        <p class="lede">I turn a design question into a small test, watch what players do, and let that decide what changes.</p>
       </header>
 
-      <section class="case-study" aria-labelledby="practice-study-title">
-        <p class="case-study-label" id="practice-study-title">How I work</p>
-        <div class="case-sections">
-          <section class="case-section">
-            <h2>Prototype the question</h2>
-            <p>I build the smallest version that can challenge an assumption. Paper prototypes test a loop before production; playable prototypes test timing and feel; short scripts test structures and economies that are difficult to reason about in prose.</p>
-            <p>For Alcherogue, those methods helped me reject two complete directions before committing to the current pouring system.</p>
-          </section>
-          <section class="case-section">
-            <h2>Watch behaviour, not approval</h2>
-            <p>During a test, I look for hesitation, misunderstood feedback, repeated mistakes, and choices players never notice. “Did you like it?” is less useful than seeing where a player stops, what they expect next, and whether the system gives them a reason to continue.</p>
-            <figure class="evidence-figure">
-              <img src="assets/design-practice/narrative-playtest.jpg" alt="A player testing a branching narrative prototype on a laptop" />
-              <figcaption>Testing whether a branching narrative remains understandable in play.</figcaption>
-            </figure>
-          </section>
-          <section class="case-section">
-            <h2>Make the design discussable</h2>
-            <p>I use Mechanics–Dynamics–Aesthetics to connect what is implemented, the behaviour that emerges, and the experience the game is trying to create. The framework gives a team shared language for explaining why a change should work—and what evidence would prove it.</p>
-            <figure class="evidence-figure">
-              <img src="assets/design-practice/mda-sharing.jpg" alt="Michel sharing the Mechanics–Dynamics–Aesthetics framework at a whiteboard" />
-              <figcaption>Sharing game-design thinking through the MDA framework.</figcaption>
-            </figure>
-          </section>
+      <div class="prose">
+        <section>
+          <h2>Prototype the question</h2>
+          <p>I build the smallest thing that can prove an idea wrong. Paper prototypes test a loop before any code exists. Playable prototypes test timing and feel. Short scripts test structures and economies that are hard to reason about on paper.</p>
+          <p>On Alcherogue, these tests helped me drop two complete directions before I settled on the pouring system.</p>
+        </section>
+        <section>
+          <h2>Watch what players do</h2>
+          <p>During a test I look for hesitation, feedback people misread, mistakes they repeat, and choices they never notice. Asking “did you like it?” tells me less than seeing where someone stops and what they expect to happen next.</p>
+        </section>
+      </div>
+      <section class="gallery-section bleed" aria-labelledby="evidence">
+        <h2 id="evidence">From playtests and talks</h2>
+        <div class="gallery">
+          <figure><img src="assets/design-practice/narrative-playtest.jpg" width="1600" height="1200" alt="A player testing a branching narrative prototype on a laptop" loading="lazy" /><figcaption>Checking whether a branching story still makes sense in play.</figcaption></figure>
+          <figure><img src="assets/design-practice/mda-sharing.jpg" width="1800" height="828" alt="Michel explaining the Mechanics–Dynamics–Aesthetics framework at a whiteboard" loading="lazy" /><figcaption>Explaining the Mechanics–Dynamics–Aesthetics framework.</figcaption></figure>
         </div>
       </section>
-      <nav class="project-pagination" aria-label="Page navigation"><a href="games/index.html#games">← All games</a><a href="games/alcherogue.html">Alcherogue case study →</a></nav>
+
+      <nav class="pager" aria-label="Page navigation">
+        <a href="games/"><small>Back to</small><strong>All games</strong></a>
+        <a class="next" href="games/alcherogue.html"><small>Case study</small><strong>Alcherogue</strong></a>
+      </nav>
     </main>
-    <footer><p>© <span id="year">2026</span> Michel Pierce Tahya</p></footer>
+
+    <footer class="site-footer wrap narrow">
+      <p>© <span id="year">2026</span> Michel Pierce Tahya</p>
+      <ul aria-label="Contact">
+        <li><a href="mailto:michelpiercetahya@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/micheltahya/" target="_blank" rel="noreferrer">LinkedIn ↗</a></li>
+        <li><a href="https://github.com/MichelPT" target="_blank" rel="noreferrer">GitHub ↗</a></li>
+        <li><a href="https://obil.itch.io" target="_blank" rel="noreferrer">itch.io ↗</a></li>
+      </ul>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

@@ -3,43 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="The Chronicles of Gilbert — a gameplay design case study by Michel Pierce Tahya." />
-    <title>The Chronicles of Gilbert — Michel Pierce Tahya</title>
+    <meta name="description" content="The Chronicles of Gilbert, a real-time action card battler. Michel Pierce Tahya designed and built the UI in Godot 4." />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <title>The Chronicles of Gilbert – Michel Pierce Tahya</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
-  <body class="project-page">
-    <main class="project-main">
-      <nav class="project-nav" aria-label="Project navigation"><a class="back-link" href="index.html#games">← All games</a></nav>
-      <header class="project-hero">
-        <p class="project-kicker">Combat design case study</p>
-        <h1>The Chronicles of Gilbert</h1>
-        <p class="project-lede">What if every card had to be played while you were still moving?</p>
-        <div class="project-meta"><span>UI design &amp; implementation</span><time datetime="2026-08-27">Aug 27, 2026</time><span>Godot 4 · GDScript</span></div>
-      </header>
-      <figure class="project-feature"><img src="../assets/the-chronicles-of-gilbert/gameplay.png" alt="The Chronicles of Gilbert real-time dungeon combat and card hand" /></figure>
+  <body>
+    <header class="wrap narrow">
+      <nav class="topbar" aria-label="Breadcrumb"><a class="back" href="index.html"><span aria-hidden="true">‹</span> All games</a></nav>
+    </header>
 
-      <section class="case-study" aria-labelledby="case-study-title">
-        <p class="case-study-label" id="case-study-title">Design notes</p>
-        <div class="case-sections">
-          <section class="case-section">
-            <h2>My contribution</h2>
-            <p>I designed and implemented the game’s UI in Godot 4. My GDScript work on this project was focused specifically on bringing that interface into the game.</p>
-          </section>
-          <section class="case-section">
-            <h2>Deckbuilding under pressure</h2>
-            <p>The Chronicles of Gilbert is a real-time action card battler about entering dungeons to confront an unknown force invading Earth. The deck supplies the player’s skills, but combat never pauses to let them use those cards.</p>
-          </section>
-          <section class="case-section">
-            <h2>Where the strategy happens</h2>
-            <p>The design joins two rhythms: deliberate deck construction and immediate action. The deck decides which tools enter the dungeon. Movement, positioning, and dodge-rolling decide whether the player can use them.</p>
-            <p>A powerful hand is not enough by itself. Strategy continues during combat through timing and execution.</p>
-          </section>
+    <main class="wrap narrow">
+      <header class="case-header">
+        <h1>The Chronicles of Gilbert</h1>
+        <p class="lede">A real-time action card battler. Your cards are your skills, and the fight keeps going while you play them.</p>
+        <dl class="case-facts">
+        <div><dt>Role</dt><dd>UI design and implementation</dd></div>
+        <div><dt>Date</dt><dd><time datetime="2026-08-27">August 27, 2026</time></dd></div>
+        <div><dt>Built with</dt><dd>Godot 4, GDScript</dd></div>
+        </dl>
+      </header>
+
+      <figure class="hero bleed"><img src="../assets/the-chronicles-of-gilbert/gameplay.png" width="1852" height="1050" alt="Real-time dungeon combat with the card hand on screen" /></figure>
+
+      <div class="prose">
+        <section>
+          <h2>My part</h2>
+          <p>I designed the UI and built it in Godot 4. My GDScript work on this project was the UI only. I didn’t program the combat.</p>
+        </section>
+        <section>
+          <h2>How it plays</h2>
+          <p>You go into dungeons to fight an unknown force that’s invading Earth. Moving and dodge-rolling are always available, and your cards work as skills on top of that.</p>
+          <p>You build the deck before a run, but you play it in real time while you position and dodge. A strong hand only helps if you can find the moment to use it.</p>
+        </section>
+      </div>
+      <section class="gallery-section bleed" aria-labelledby="screenshots">
+        <h2 id="screenshots">Screenshots</h2>
+        <div class="gallery">
+          <figure><img src="../assets/the-chronicles-of-gilbert/gameover-state.png" width="2492" height="1400" alt="The game-over screen" loading="lazy" /></figure>
         </div>
       </section>
-      <section class="project-gallery" aria-label="The Chronicles of Gilbert screenshots"><figure><img src="../assets/the-chronicles-of-gilbert/gameover-state.png" alt="The Chronicles of Gilbert game-over screen" /></figure></section>
-      <nav class="project-pagination" aria-label="More games"><a href="not-very-disco.html">← (Not) Very Disco</a><a href="fih-together.html">Fih Together →</a></nav>
+
+      <nav class="pager" aria-label="More games">
+        <a href="not-very-disco.html"><small>Previous game</small><strong>(Not) Very Disco</strong></a>
+        <a class="next" href="fih-together.html"><small>Next game</small><strong>Fih Together</strong></a>
+      </nav>
     </main>
-    <footer><p>© <span id="year">2026</span> Michel Pierce Tahya</p></footer>
+
+    <footer class="site-footer wrap narrow">
+      <p>© <span id="year">2026</span> Michel Pierce Tahya</p>
+      <ul aria-label="Contact">
+        <li><a href="mailto:michelpiercetahya@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/micheltahya/" target="_blank" rel="noreferrer">LinkedIn ↗</a></li>
+        <li><a href="https://github.com/MichelPT" target="_blank" rel="noreferrer">GitHub ↗</a></li>
+        <li><a href="https://obil.itch.io" target="_blank" rel="noreferrer">itch.io ↗</a></li>
+      </ul>
+    </footer>
     <script src="../script.js"></script>
   </body>
 </html>
